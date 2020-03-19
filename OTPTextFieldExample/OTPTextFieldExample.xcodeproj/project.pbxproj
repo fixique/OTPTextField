@@ -13,6 +13,16 @@
 		57769AF924237EF60092D6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57769AF824237EF60092D6B9 /* Assets.xcassets */; };
 		57769AFC24237EF60092D6B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57769AFA24237EF60092D6B9 /* LaunchScreen.storyboard */; };
 		57769B0724237EF70092D6B9 /* OTPTextFieldExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B0624237EF70092D6B9 /* OTPTextFieldExampleTests.swift */; };
+		57769B14242381240092D6B9 /* BaseInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B13242381240092D6B9 /* BaseInputView.swift */; };
+		57769B172423834E0092D6B9 /* OTPFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B162423834E0092D6B9 /* OTPFieldConfiguration.swift */; };
+		57769B1B242383E00092D6B9 /* OTPTextFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B1A242383E00092D6B9 /* OTPTextFieldData.swift */; };
+		57769B1D242383F50092D6B9 /* PinContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B1C242383F50092D6B9 /* PinContainer.swift */; };
+		57769B1F2423841C0092D6B9 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B1E2423841C0092D6B9 /* OTPTextField.swift */; };
+		57769B22242384640092D6B9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B21242384640092D6B9 /* Array.swift */; };
+		57769B2A242388C80092D6B9 /* DefaultPinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B29242388C80092D6B9 /* DefaultPinedView.swift */; };
+		57769B2C242388D30092D6B9 /* DefaultPinedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B2B242388D30092D6B9 /* DefaultPinedView.xib */; };
+		57769B2F24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B2E24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift */; };
+		57769B3124238F5F0092D6B9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B3024238F5F0092D6B9 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,16 @@
 		57769B0224237EF70092D6B9 /* OTPTextFieldExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPTextFieldExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57769B0624237EF70092D6B9 /* OTPTextFieldExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextFieldExampleTests.swift; sourceTree = "<group>"; };
 		57769B0824237EF70092D6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57769B13242381240092D6B9 /* BaseInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInputView.swift; sourceTree = "<group>"; };
+		57769B162423834E0092D6B9 /* OTPFieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldConfiguration.swift; sourceTree = "<group>"; };
+		57769B1A242383E00092D6B9 /* OTPTextFieldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextFieldData.swift; sourceTree = "<group>"; };
+		57769B1C242383F50092D6B9 /* PinContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinContainer.swift; sourceTree = "<group>"; };
+		57769B1E2423841C0092D6B9 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		57769B21242384640092D6B9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		57769B29242388C80092D6B9 /* DefaultPinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPinedView.swift; sourceTree = "<group>"; };
+		57769B2B242388D30092D6B9 /* DefaultPinedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultPinedView.xib; sourceTree = "<group>"; };
+		57769B2E24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextFieldAdapter.swift; sourceTree = "<group>"; };
+		57769B3024238F5F0092D6B9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +120,106 @@
 		57769B112423805F0092D6B9 /* OTPTextField */ = {
 			isa = PBXGroup;
 			children = (
+				57769B24242387F30092D6B9 /* TextField */,
+				57769B232423854D0092D6B9 /* Library */,
 			);
 			path = OTPTextField;
+			sourceTree = "<group>";
+		};
+		57769B122423810F0092D6B9 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				57769B13242381240092D6B9 /* BaseInputView.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		57769B15242383370092D6B9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				57769B162423834E0092D6B9 /* OTPFieldConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		57769B19242383C80092D6B9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				57769B1A242383E00092D6B9 /* OTPTextFieldData.swift */,
+				57769B1C242383F50092D6B9 /* PinContainer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57769B202423842F0092D6B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57769B21242384640092D6B9 /* Array.swift */,
+				57769B3024238F5F0092D6B9 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57769B232423854D0092D6B9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				57769B122423810F0092D6B9 /* BaseClasses */,
+				57769B19242383C80092D6B9 /* Protocols */,
+				57769B202423842F0092D6B9 /* Extensions */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		57769B24242387F30092D6B9 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				57769B26242388520092D6B9 /* Default */,
+				57769B15242383370092D6B9 /* Configuration */,
+				57769B1E2423841C0092D6B9 /* OTPTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		57769B25242388380092D6B9 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				57769B2D24238C2B0092D6B9 /* DefaultTextFieldAdapter */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		57769B26242388520092D6B9 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				57769B272423885E0092D6B9 /* PinViews */,
+				57769B25242388380092D6B9 /* Adapter */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		57769B272423885E0092D6B9 /* PinViews */ = {
+			isa = PBXGroup;
+			children = (
+				57769B282423889D0092D6B9 /* DefaultPinedView */,
+			);
+			path = PinViews;
+			sourceTree = "<group>";
+		};
+		57769B282423889D0092D6B9 /* DefaultPinedView */ = {
+			isa = PBXGroup;
+			children = (
+				57769B29242388C80092D6B9 /* DefaultPinedView.swift */,
+				57769B2B242388D30092D6B9 /* DefaultPinedView.xib */,
+			);
+			path = DefaultPinedView;
+			sourceTree = "<group>";
+		};
+		57769B2D24238C2B0092D6B9 /* DefaultTextFieldAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				57769B2E24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift */,
+			);
+			path = DefaultTextFieldAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57769B2C242388D30092D6B9 /* DefaultPinedView.xib in Resources */,
 				57769AFC24237EF60092D6B9 /* LaunchScreen.storyboard in Resources */,
 				57769AF924237EF60092D6B9 /* Assets.xcassets in Resources */,
 				57769AF724237EF50092D6B9 /* Main.storyboard in Resources */,
@@ -205,8 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57769B1B242383E00092D6B9 /* OTPTextFieldData.swift in Sources */,
+				57769B1F2423841C0092D6B9 /* OTPTextField.swift in Sources */,
+				57769B3124238F5F0092D6B9 /* UIView.swift in Sources */,
+				57769B1D242383F50092D6B9 /* PinContainer.swift in Sources */,
 				57769AF424237EF50092D6B9 /* ViewController.swift in Sources */,
+				57769B172423834E0092D6B9 /* OTPFieldConfiguration.swift in Sources */,
+				57769B22242384640092D6B9 /* Array.swift in Sources */,
 				57769AF024237EF50092D6B9 /* AppDelegate.swift in Sources */,
+				57769B2F24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift in Sources */,
+				57769B14242381240092D6B9 /* BaseInputView.swift in Sources */,
+				57769B2A242388C80092D6B9 /* DefaultPinedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
