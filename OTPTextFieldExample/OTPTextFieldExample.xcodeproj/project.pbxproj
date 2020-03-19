@@ -19,10 +19,13 @@
 		57769B1D242383F50092D6B9 /* PinContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B1C242383F50092D6B9 /* PinContainer.swift */; };
 		57769B1F2423841C0092D6B9 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B1E2423841C0092D6B9 /* OTPTextField.swift */; };
 		57769B22242384640092D6B9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B21242384640092D6B9 /* Array.swift */; };
-		57769B2A242388C80092D6B9 /* DefaultPinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B29242388C80092D6B9 /* DefaultPinedView.swift */; };
-		57769B2C242388D30092D6B9 /* DefaultPinedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B2B242388D30092D6B9 /* DefaultPinedView.xib */; };
+		57769B2A242388C80092D6B9 /* DefaultPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B29242388C80092D6B9 /* DefaultPinView.swift */; };
+		57769B2C242388D30092D6B9 /* DefaultPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B2B242388D30092D6B9 /* DefaultPinView.xib */; };
 		57769B2F24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B2E24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift */; };
 		57769B3124238F5F0092D6B9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B3024238F5F0092D6B9 /* UIView.swift */; };
+		57769B34242399EC0092D6B9 /* RoundPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B33242399EC0092D6B9 /* RoundPinView.swift */; };
+		57769B3624239A0D0092D6B9 /* RoundPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B3524239A0D0092D6B9 /* RoundPinView.xib */; };
+		57769B3924239CEE0092D6B9 /* RoundTextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B3824239CEE0092D6B9 /* RoundTextFieldAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +55,13 @@
 		57769B1C242383F50092D6B9 /* PinContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinContainer.swift; sourceTree = "<group>"; };
 		57769B1E2423841C0092D6B9 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		57769B21242384640092D6B9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		57769B29242388C80092D6B9 /* DefaultPinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPinedView.swift; sourceTree = "<group>"; };
-		57769B2B242388D30092D6B9 /* DefaultPinedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultPinedView.xib; sourceTree = "<group>"; };
+		57769B29242388C80092D6B9 /* DefaultPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPinView.swift; sourceTree = "<group>"; };
+		57769B2B242388D30092D6B9 /* DefaultPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultPinView.xib; sourceTree = "<group>"; };
 		57769B2E24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextFieldAdapter.swift; sourceTree = "<group>"; };
 		57769B3024238F5F0092D6B9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		57769B33242399EC0092D6B9 /* RoundPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPinView.swift; sourceTree = "<group>"; };
+		57769B3524239A0D0092D6B9 /* RoundPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundPinView.xib; sourceTree = "<group>"; };
+		57769B3824239CEE0092D6B9 /* RoundTextFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextFieldAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 		57769B25242388380092D6B9 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				57769B3724239CD60092D6B9 /* RoundTextFieldAdapter */,
 				57769B2D24238C2B0092D6B9 /* DefaultTextFieldAdapter */,
 			);
 			path = Adapter;
@@ -200,18 +207,19 @@
 		57769B272423885E0092D6B9 /* PinViews */ = {
 			isa = PBXGroup;
 			children = (
-				57769B282423889D0092D6B9 /* DefaultPinedView */,
+				57769B322423997F0092D6B9 /* RoundPinView */,
+				57769B282423889D0092D6B9 /* DefaultPinView */,
 			);
 			path = PinViews;
 			sourceTree = "<group>";
 		};
-		57769B282423889D0092D6B9 /* DefaultPinedView */ = {
+		57769B282423889D0092D6B9 /* DefaultPinView */ = {
 			isa = PBXGroup;
 			children = (
-				57769B29242388C80092D6B9 /* DefaultPinedView.swift */,
-				57769B2B242388D30092D6B9 /* DefaultPinedView.xib */,
+				57769B29242388C80092D6B9 /* DefaultPinView.swift */,
+				57769B2B242388D30092D6B9 /* DefaultPinView.xib */,
 			);
-			path = DefaultPinedView;
+			path = DefaultPinView;
 			sourceTree = "<group>";
 		};
 		57769B2D24238C2B0092D6B9 /* DefaultTextFieldAdapter */ = {
@@ -220,6 +228,23 @@
 				57769B2E24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift */,
 			);
 			path = DefaultTextFieldAdapter;
+			sourceTree = "<group>";
+		};
+		57769B322423997F0092D6B9 /* RoundPinView */ = {
+			isa = PBXGroup;
+			children = (
+				57769B33242399EC0092D6B9 /* RoundPinView.swift */,
+				57769B3524239A0D0092D6B9 /* RoundPinView.xib */,
+			);
+			path = RoundPinView;
+			sourceTree = "<group>";
+		};
+		57769B3724239CD60092D6B9 /* RoundTextFieldAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				57769B3824239CEE0092D6B9 /* RoundTextFieldAdapter.swift */,
+			);
+			path = RoundTextFieldAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +328,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57769B2C242388D30092D6B9 /* DefaultPinedView.xib in Resources */,
+				57769B2C242388D30092D6B9 /* DefaultPinView.xib in Resources */,
+				57769B3624239A0D0092D6B9 /* RoundPinView.xib in Resources */,
 				57769AFC24237EF60092D6B9 /* LaunchScreen.storyboard in Resources */,
 				57769AF924237EF60092D6B9 /* Assets.xcassets in Resources */,
 				57769AF724237EF50092D6B9 /* Main.storyboard in Resources */,
@@ -331,10 +357,12 @@
 				57769AF424237EF50092D6B9 /* ViewController.swift in Sources */,
 				57769B172423834E0092D6B9 /* OTPFieldConfiguration.swift in Sources */,
 				57769B22242384640092D6B9 /* Array.swift in Sources */,
+				57769B34242399EC0092D6B9 /* RoundPinView.swift in Sources */,
 				57769AF024237EF50092D6B9 /* AppDelegate.swift in Sources */,
 				57769B2F24238C3D0092D6B9 /* DefaultTextFieldAdapter.swift in Sources */,
+				57769B3924239CEE0092D6B9 /* RoundTextFieldAdapter.swift in Sources */,
 				57769B14242381240092D6B9 /* BaseInputView.swift in Sources */,
-				57769B2A242388C80092D6B9 /* DefaultPinedView.swift in Sources */,
+				57769B2A242388C80092D6B9 /* DefaultPinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JE6A9LTMD3;
+				DEVELOPMENT_TEAM = 3QP2FRGX8M;
 				INFOPLIST_FILE = OTPTextFieldExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -513,7 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JE6A9LTMD3;
+				DEVELOPMENT_TEAM = 3QP2FRGX8M;
 				INFOPLIST_FILE = OTPTextFieldExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

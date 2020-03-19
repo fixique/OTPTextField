@@ -1,5 +1,5 @@
 //
-//  DefaultTextFieldAdapter.swift
+//  RoundTextFieldAdapter.swift
 //  OTPTextFieldExample
 //
 //  Created by Vladislav Krupenko on 19.03.2020.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-public final class DefaultTextFieldAdapter: NSObject {
+public final class RoundTextFieldAdapter: NSObject {
 
     // MARK: - Constants
 
     private enum Constants {
-        static let numberOfPins = 4
-        static let pinSize = CGSize(width: 56.0, height: 48.0)
-        static let space: CGFloat = 16.0
+        static let numberOfPins = 6
+        static let pinSize = CGSize(width: 44, height: 44)
+        static let space: CGFloat = 6
     }
 
-    // MARK: - Initialization
+    // MARK: - Inititalization
 
     override public init() {}
 
@@ -26,14 +26,14 @@ public final class DefaultTextFieldAdapter: NSObject {
 
 // MARK: - OTPTextFieldData
 
-extension DefaultTextFieldAdapter: OTPTextFieldData {
+extension RoundTextFieldAdapter: OTPTextFieldData {
 
     public func numberOfPins() -> Int {
         return Constants.numberOfPins
     }
 
     public func otpTextField(viewAt index: Int) -> PinContainer {
-        guard let pinView = DefaultPinView.loadFromNib() as? PinContainer else {
+        guard let pinView = RoundPinView.loadFromNib() as? PinContainer else {
             fatalError("Can't find class for init pinField")
         }
         return pinView

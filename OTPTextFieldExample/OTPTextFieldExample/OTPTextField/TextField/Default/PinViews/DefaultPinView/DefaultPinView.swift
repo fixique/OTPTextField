@@ -1,5 +1,5 @@
 //
-//  DefaultPinedView.swift
+//  DefaultPinView.swift
 //  OTPTextFieldExample
 //
 //  Created by Vladislav Krupenko on 19.03.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class DefaultPinedView: UIView {
+public final class DefaultPinView: UIView {
 
     // MARK: - IBOutlets
 
@@ -27,7 +27,7 @@ public final class DefaultPinedView: UIView {
 
 // MARK: - Pin Container
 
-extension DefaultPinedView: PinContainer {
+extension DefaultPinView: PinContainer {
 
     public func set(value: String?) {
         codeLabel.text = value
@@ -49,7 +49,7 @@ extension DefaultPinedView: PinContainer {
 
 // MARK: - Configuration
 
-private extension DefaultPinedView {
+private extension DefaultPinView {
 
     func setupInitialState() {
         configureContainerView()
@@ -79,7 +79,7 @@ private extension DefaultPinedView {
 
 // MARK: - Animation
 
-private extension DefaultPinedView {
+private extension DefaultPinView {
 
     func startIndicatorAnimation() {
         let appearAnimation = CABasicAnimation(keyPath: "opacity")
