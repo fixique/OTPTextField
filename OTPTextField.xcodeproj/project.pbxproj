@@ -11,6 +11,18 @@
 		57769B4E2423AEEC0092D6B9 /* OTPTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57769B442423AEEC0092D6B9 /* OTPTextField.framework */; };
 		57769B532423AEEC0092D6B9 /* OTPTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B522423AEEC0092D6B9 /* OTPTextFieldTests.swift */; };
 		57769B552423AEEC0092D6B9 /* OTPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 57769B472423AEEC0092D6B9 /* OTPTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57769BA02423B6AD0092D6B9 /* BaseInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B882423B6AD0092D6B9 /* BaseInputView.swift */; };
+		57769BA22423B6AD0092D6B9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B8B2423B6AD0092D6B9 /* Array.swift */; };
+		57769BA32423B6AD0092D6B9 /* OTPTextFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B8D2423B6AD0092D6B9 /* OTPTextFieldData.swift */; };
+		57769BA42423B6AD0092D6B9 /* PinContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B8E2423B6AD0092D6B9 /* PinContainer.swift */; };
+		57769BA52423B6AD0092D6B9 /* OTPFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B912423B6AD0092D6B9 /* OTPFieldConfiguration.swift */; };
+		57769BA62423B6AD0092D6B9 /* RoundTextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B952423B6AD0092D6B9 /* RoundTextFieldAdapter.swift */; };
+		57769BA72423B6AD0092D6B9 /* DefaultTextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B972423B6AD0092D6B9 /* DefaultTextFieldAdapter.swift */; };
+		57769BA82423B6AD0092D6B9 /* DefaultPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B9A2423B6AD0092D6B9 /* DefaultPinView.swift */; };
+		57769BA92423B6AD0092D6B9 /* DefaultPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B9B2423B6AD0092D6B9 /* DefaultPinView.xib */; };
+		57769BAA2423B6AD0092D6B9 /* RoundPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B9D2423B6AD0092D6B9 /* RoundPinView.xib */; };
+		57769BAB2423B6AD0092D6B9 /* RoundPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B9E2423B6AD0092D6B9 /* RoundPinView.swift */; };
+		57769BAC2423B6AD0092D6B9 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B9F2423B6AD0092D6B9 /* OTPTextField.swift */; };
 		A33AAB082A2B590A82EF84A6 /* Pods_OTPTextFieldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6C4FFBFCC27C94BA5084EB /* Pods_OTPTextFieldTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +44,18 @@
 		57769B4D2423AEEC0092D6B9 /* OTPTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57769B522423AEEC0092D6B9 /* OTPTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextFieldTests.swift; sourceTree = "<group>"; };
 		57769B542423AEEC0092D6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57769B882423B6AD0092D6B9 /* BaseInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputView.swift; sourceTree = "<group>"; };
+		57769B8B2423B6AD0092D6B9 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		57769B8D2423B6AD0092D6B9 /* OTPTextFieldData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextFieldData.swift; sourceTree = "<group>"; };
+		57769B8E2423B6AD0092D6B9 /* PinContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinContainer.swift; sourceTree = "<group>"; };
+		57769B912423B6AD0092D6B9 /* OTPFieldConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPFieldConfiguration.swift; sourceTree = "<group>"; };
+		57769B952423B6AD0092D6B9 /* RoundTextFieldAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextFieldAdapter.swift; sourceTree = "<group>"; };
+		57769B972423B6AD0092D6B9 /* DefaultTextFieldAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTextFieldAdapter.swift; sourceTree = "<group>"; };
+		57769B9A2423B6AD0092D6B9 /* DefaultPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPinView.swift; sourceTree = "<group>"; };
+		57769B9B2423B6AD0092D6B9 /* DefaultPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultPinView.xib; sourceTree = "<group>"; };
+		57769B9D2423B6AD0092D6B9 /* RoundPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoundPinView.xib; sourceTree = "<group>"; };
+		57769B9E2423B6AD0092D6B9 /* RoundPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundPinView.swift; sourceTree = "<group>"; };
+		57769B9F2423B6AD0092D6B9 /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		5E0593FA9729879FA8C50540 /* Pods_OTPTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6C4FFBFCC27C94BA5084EB /* Pods_OTPTextFieldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPTextFieldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A70986F327069EEF1EF721 /* Pods-OTPTextFieldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPTextFieldTests.release.xcconfig"; path = "Target Support Files/Pods-OTPTextFieldTests/Pods-OTPTextFieldTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +107,8 @@
 		57769B462423AEEC0092D6B9 /* OTPTextField */ = {
 			isa = PBXGroup;
 			children = (
+				57769B862423B6AD0092D6B9 /* Library */,
+				57769B8F2423B6AD0092D6B9 /* TextField */,
 				57769B472423AEEC0092D6B9 /* OTPTextField.h */,
 				57769B482423AEEC0092D6B9 /* Info.plist */,
 			);
@@ -98,6 +124,120 @@
 			path = OTPTextFieldTests;
 			sourceTree = "<group>";
 		};
+		57769B862423B6AD0092D6B9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				57769B872423B6AD0092D6B9 /* BaseClasses */,
+				57769B892423B6AD0092D6B9 /* Extensions */,
+				57769B8C2423B6AD0092D6B9 /* Protocols */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		57769B872423B6AD0092D6B9 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				57769B882423B6AD0092D6B9 /* BaseInputView.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		57769B892423B6AD0092D6B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57769B8B2423B6AD0092D6B9 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57769B8C2423B6AD0092D6B9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				57769B8D2423B6AD0092D6B9 /* OTPTextFieldData.swift */,
+				57769B8E2423B6AD0092D6B9 /* PinContainer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57769B8F2423B6AD0092D6B9 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				57769B902423B6AD0092D6B9 /* Configuration */,
+				57769B922423B6AD0092D6B9 /* Default */,
+				57769B9F2423B6AD0092D6B9 /* OTPTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		57769B902423B6AD0092D6B9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				57769B912423B6AD0092D6B9 /* OTPFieldConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		57769B922423B6AD0092D6B9 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				57769B932423B6AD0092D6B9 /* Adapter */,
+				57769B982423B6AD0092D6B9 /* PinViews */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		57769B932423B6AD0092D6B9 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				57769B942423B6AD0092D6B9 /* RoundTextFieldAdapter */,
+				57769B962423B6AD0092D6B9 /* DefaultTextFieldAdapter */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		57769B942423B6AD0092D6B9 /* RoundTextFieldAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				57769B952423B6AD0092D6B9 /* RoundTextFieldAdapter.swift */,
+			);
+			path = RoundTextFieldAdapter;
+			sourceTree = "<group>";
+		};
+		57769B962423B6AD0092D6B9 /* DefaultTextFieldAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				57769B972423B6AD0092D6B9 /* DefaultTextFieldAdapter.swift */,
+			);
+			path = DefaultTextFieldAdapter;
+			sourceTree = "<group>";
+		};
+		57769B982423B6AD0092D6B9 /* PinViews */ = {
+			isa = PBXGroup;
+			children = (
+				57769B992423B6AD0092D6B9 /* DefaultPinView */,
+				57769B9C2423B6AD0092D6B9 /* RoundPinView */,
+			);
+			path = PinViews;
+			sourceTree = "<group>";
+		};
+		57769B992423B6AD0092D6B9 /* DefaultPinView */ = {
+			isa = PBXGroup;
+			children = (
+				57769B9A2423B6AD0092D6B9 /* DefaultPinView.swift */,
+				57769B9B2423B6AD0092D6B9 /* DefaultPinView.xib */,
+			);
+			path = DefaultPinView;
+			sourceTree = "<group>";
+		};
+		57769B9C2423B6AD0092D6B9 /* RoundPinView */ = {
+			isa = PBXGroup;
+			children = (
+				57769B9D2423B6AD0092D6B9 /* RoundPinView.xib */,
+				57769B9E2423B6AD0092D6B9 /* RoundPinView.swift */,
+			);
+			path = RoundPinView;
+			sourceTree = "<group>";
+		};
 		92E7B44430D7E2C72441B1E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +246,6 @@
 				FE8B22E35DBBFB90C74921ED /* Pods-OTPTextFieldTests.debug.xcconfig */,
 				87A70986F327069EEF1EF721 /* Pods-OTPTextFieldTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +277,7 @@
 			buildConfigurationList = 57769B582423AEEC0092D6B9 /* Build configuration list for PBXNativeTarget "OTPTextField" */;
 			buildPhases = (
 				83D4424437E3DCAFC766E531 /* [CP] Check Pods Manifest.lock */,
+				57769BAD2423B7040092D6B9 /* SwiftLint Script */,
 				57769B3F2423AEEC0092D6B9 /* Headers */,
 				57769B402423AEEC0092D6B9 /* Sources */,
 				57769B412423AEEC0092D6B9 /* Frameworks */,
@@ -213,6 +353,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57769BA92423B6AD0092D6B9 /* DefaultPinView.xib in Resources */,
+				57769BAA2423B6AD0092D6B9 /* RoundPinView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +368,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57769BAD2423B7040092D6B9 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		83D4424437E3DCAFC766E531 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +437,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57769BA22423B6AD0092D6B9 /* Array.swift in Sources */,
+				57769BA62423B6AD0092D6B9 /* RoundTextFieldAdapter.swift in Sources */,
+				57769BA42423B6AD0092D6B9 /* PinContainer.swift in Sources */,
+				57769BAB2423B6AD0092D6B9 /* RoundPinView.swift in Sources */,
+				57769BA82423B6AD0092D6B9 /* DefaultPinView.swift in Sources */,
+				57769BA02423B6AD0092D6B9 /* BaseInputView.swift in Sources */,
+				57769BAC2423B6AD0092D6B9 /* OTPTextField.swift in Sources */,
+				57769BA32423B6AD0092D6B9 /* OTPTextFieldData.swift in Sources */,
+				57769BA52423B6AD0092D6B9 /* OTPFieldConfiguration.swift in Sources */,
+				57769BA72423B6AD0092D6B9 /* DefaultTextFieldAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -407,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +609,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fixique.OTPTextField;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +635,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fixique.OTPTextField;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE8B22E35DBBFB90C74921ED /* Pods-OTPTextFieldTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
 				INFOPLIST_FILE = OTPTextFieldTests/Info.plist;
@@ -492,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87A70986F327069EEF1EF721 /* Pods-OTPTextFieldTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
 				INFOPLIST_FILE = OTPTextFieldTests/Info.plist;

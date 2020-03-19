@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SurfUtils
 
 public final class DefaultTextFieldAdapter: NSObject {
 
