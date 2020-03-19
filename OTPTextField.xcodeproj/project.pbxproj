@@ -23,6 +23,7 @@
 		57769BAA2423B6AD0092D6B9 /* RoundPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57769B9D2423B6AD0092D6B9 /* RoundPinView.xib */; };
 		57769BAB2423B6AD0092D6B9 /* RoundPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B9E2423B6AD0092D6B9 /* RoundPinView.swift */; };
 		57769BAC2423B6AD0092D6B9 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57769B9F2423B6AD0092D6B9 /* OTPTextField.swift */; };
+		57A3C49A2423C81800AB0219 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C4992423C81800AB0219 /* UIView.swift */; };
 		A33AAB082A2B590A82EF84A6 /* Pods_OTPTextFieldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6C4FFBFCC27C94BA5084EB /* Pods_OTPTextFieldTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		57769B9D2423B6AD0092D6B9 /* RoundPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoundPinView.xib; sourceTree = "<group>"; };
 		57769B9E2423B6AD0092D6B9 /* RoundPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundPinView.swift; sourceTree = "<group>"; };
 		57769B9F2423B6AD0092D6B9 /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		57A3C4992423C81800AB0219 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		5E0593FA9729879FA8C50540 /* Pods_OTPTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6C4FFBFCC27C94BA5084EB /* Pods_OTPTextFieldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPTextFieldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A70986F327069EEF1EF721 /* Pods-OTPTextFieldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPTextFieldTests.release.xcconfig"; path = "Target Support Files/Pods-OTPTextFieldTests/Pods-OTPTextFieldTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				57769B8B2423B6AD0092D6B9 /* Array.swift */,
+				57A3C4992423C81800AB0219 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			files = (
 				57769BA22423B6AD0092D6B9 /* Array.swift in Sources */,
 				57769BA62423B6AD0092D6B9 /* RoundTextFieldAdapter.swift in Sources */,
+				57A3C49A2423C81800AB0219 /* UIView.swift in Sources */,
 				57769BA42423B6AD0092D6B9 /* PinContainer.swift in Sources */,
 				57769BAB2423B6AD0092D6B9 /* RoundPinView.swift in Sources */,
 				57769BA82423B6AD0092D6B9 /* DefaultPinView.swift in Sources */,
@@ -593,9 +597,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C8F1FC5DE8004CDA347EC61 /* Pods-OTPTextField.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = JE6A9LTMD3;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -606,6 +611,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fixique.OTPTextField;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -619,9 +625,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30A2EE5F04BB85E9D01FE7BD /* Pods-OTPTextField.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = JE6A9LTMD3;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -632,6 +639,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fixique.OTPTextField;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

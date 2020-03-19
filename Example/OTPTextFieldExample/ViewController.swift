@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OTPTextField
 
 class ViewController: UIViewController {
 

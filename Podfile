@@ -6,7 +6,6 @@ end
 
 def common_pods
   utils
-  pod 'SurfUtils/XibView', :git => 'https://github.com/surfstudio/iOS-Utils.git', :tag => '10.0.5'
 end
 
 target 'OTPTextField' do
