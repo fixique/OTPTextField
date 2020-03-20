@@ -32,7 +32,7 @@ internal enum L10n {
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Custom.title")
     }
     internal enum Default {
-      /// This is an example of a default input field. An error state has been added to it. Correct password %@
+      /// This is an example of a default input field. An error state has been added to it. Correct password is %@
       internal static func description(_ p1: String) -> String {
         return L10n.tr("Localizable", "OTPFieldType.Default.description", p1)
       }
@@ -40,7 +40,7 @@ internal enum L10n {
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Default.title")
     }
     internal enum Round {
-      /// This is an example of a default rounded input field. An error state has been added to it. Correct password %@
+      /// This is an example of a default rounded input field. An error state has been added to it. Correct password is %@
       internal static func description(_ p1: String) -> String {
         return L10n.tr("Localizable", "OTPFieldType.Round.description", p1)
       }
