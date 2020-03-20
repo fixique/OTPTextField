@@ -1,0 +1,20 @@
+xcassets:
+  inputs:
+    - OTPTextFieldExample/Resources/Images/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: OTPTextFieldExample/Resources/Images/Assets.swift
+
+fonts:
+  inputs:
+    - OTPTextFieldExample/Resources/Fonts/
+  outputs:
+    - templateName: swift4
+      output: OTPTextFieldExample/Resources/Fonts/Fonts.swift
+
+strings:
+  inputs:
+    - OTPTextFieldExample/Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: OTPTextFieldExample/Resources/Strings/Strings.swift
