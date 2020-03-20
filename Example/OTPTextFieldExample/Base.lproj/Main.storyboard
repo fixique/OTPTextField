@@ -16,40 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMQ-tQ-5RK" customClass="OTPTextField" customModule="OTPTextFieldExample" customModuleProvider="target">
-                                <rect key="frame" x="10" y="144" width="394" height="48"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QL8-H9-C56" customClass="OTPTextField" customModule="OTPTextField">
+                                <rect key="frame" x="60" y="144" width="294" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="l2S-jX-EJ3"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-qX-xYb" customClass="OTPTextField" customModule="OTPTextFieldExample" customModuleProvider="target">
-                                <rect key="frame" x="60" y="242" width="294" height="44"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="294" id="Zxo-ww-8oe"/>
-                                    <constraint firstAttribute="height" constant="44" id="m36-0p-GLW"/>
+                                    <constraint firstAttribute="height" constant="44" id="xmV-sE-bvW"/>
+                                    <constraint firstAttribute="width" constant="294" id="zLE-aq-ZRq"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dZP-qX-xYb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FxX-Q9-jPP"/>
-                            <constraint firstItem="mMQ-tQ-5RK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="SeD-kn-GG9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mMQ-tQ-5RK" secondAttribute="trailing" constant="10" id="ddM-rU-6cr"/>
-                            <constraint firstItem="mMQ-tQ-5RK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="de8-2w-P2j"/>
-                            <constraint firstItem="dZP-qX-xYb" firstAttribute="top" secondItem="mMQ-tQ-5RK" secondAttribute="bottom" constant="50" id="lcY-Z8-eU1"/>
+                            <constraint firstItem="QL8-H9-C56" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Wz-Zp-8P7"/>
+                            <constraint firstItem="QL8-H9-C56" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="PFt-gu-CXO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="otpTextField" destination="mMQ-tQ-5RK" id="13K-ng-1ei"/>
-                        <outlet property="roundTextField" destination="dZP-qX-xYb" id="vZk-xV-aRm"/>
+                        <outlet property="textField" destination="QL8-H9-C56" id="IEC-up-a7p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="139"/>
+            <point key="canvasLocation" x="132" y="138"/>
         </scene>
     </scenes>
 </document>

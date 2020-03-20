@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version = "0.1.0"
   s.summary = "This library makes it easy to implement SMS input field with the ability to automatically substitute code from SMS messages"
   s.homepage = "https://github.com/fixique/OTPTextField"
-  # s.license = { :type => "MIT", :file => "LICENSE" }
+  s.license = { :type => "MIT", :file => "LICENSE" }
 
   s.author = { "Krupenko Vliadislav" => "dev.fixique@gmail.com" }
   s.ios.deployment_target = "11.0"
