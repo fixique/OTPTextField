@@ -9,23 +9,6 @@
 import UIKit
 import ReactiveDataDisplayManager
 
-enum OTPFieldType: CaseIterable {
-    case `default`
-    case round
-    case custom
-
-    var title: String {
-        switch self {
-        case .default:
-            return L10n.OTPFieldType.Default.title
-        case .round:
-            return L10n.OTPFieldType.Round.title
-        case .custom:
-            return L10n.OTPFieldType.Custom.title
-        }
-    }
-}
-
 final class MainViewController: UIViewController {
 
     // MARK: - IBOutlets
@@ -84,8 +67,8 @@ private extension MainViewController {
         adapter.clearCellGenerators()
         OTPFieldType.allCases.forEach { type in
             let gen = BaseCellGenerator<MainFeedCell>(with: type.title)
-            gen.didSelectEvent += {
-                print(type)
+            gen.didSelectEvent += { [weak self] in
+                self?.output?.openOTP(with: type)
             }
             adapter.addCellGenerator(gen)
         }

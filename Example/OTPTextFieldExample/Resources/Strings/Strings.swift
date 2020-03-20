@@ -12,6 +12,13 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
 
+  internal enum Errors {
+    /// Correct password
+    internal static let correctPassword = L10n.tr("Localizable", "Errors.correctPassword")
+    /// Incorrect password
+    internal static let iccorectPassword = L10n.tr("Localizable", "Errors.iccorectPassword")
+  }
+
   internal enum Main {
     /// Examples
     internal static let title = L10n.tr("Localizable", "Main.Title")
@@ -20,13 +27,21 @@ internal enum L10n {
   internal enum OTPFieldType {
     internal enum Custom {
       /// Custom input field
+      internal static let description = L10n.tr("Localizable", "OTPFieldType.Custom.description")
+      /// Custom input field
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Custom.title")
     }
     internal enum Default {
+      /// This is an example of a default input field. An error state has been added to it. Correct password %@
+      internal static func description(_ p1: String) -> String {
+        return L10n.tr("Localizable", "OTPFieldType.Default.description", p1)
+      }
       /// Default input field
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Default.title")
     }
     internal enum Round {
+      /// Round input field
+      internal static let description = L10n.tr("Localizable", "OTPFieldType.Round.description")
       /// Round input field
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Round.title")
     }

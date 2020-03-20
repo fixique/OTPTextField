@@ -14,6 +14,7 @@ public final class OTPTextField: BaseInputView {
     // MARK: - Public Properties
 
     public var onBeginEditing: (() -> Void)?
+    public var onTextChanged: ((String?) -> Void)?
     public var onEndEditing: (() -> Void)?
     public var onOTPEnter: ((String) -> Void)?
 
@@ -232,6 +233,7 @@ private extension OTPTextField {
 
     /// Method will triggered if all pins filled
     func notifyIfTextChanged() {
+        onTextChanged?(text)
         guard currentCharactersCount == charactersCount else {
             return
         }

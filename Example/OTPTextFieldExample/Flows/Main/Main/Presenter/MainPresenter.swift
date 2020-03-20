@@ -10,6 +10,8 @@ final class MainPresenter: MainModuleOutput {
 
     // MARK: - MainModuleOutput
 
+    var onOpenOTP: ((OTPFieldType) -> Void)?
+
     // MARK: - Properties
 
     weak var view: MainViewInput?
@@ -27,6 +29,10 @@ extension MainPresenter: MainViewOutput {
 
     func viewLoaded() {
         view?.setupInitialState()
+    }
+
+    func openOTP(with type: OTPFieldType) {
+        onOpenOTP?(type)
     }
 
 }

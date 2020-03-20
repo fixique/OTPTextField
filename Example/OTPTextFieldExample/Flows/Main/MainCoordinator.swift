@@ -27,8 +27,33 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
 private extension MainCoordinator {
 
     func showModule() {
-        let (view, _) = MainModuleConfigurator().configure()
+        let (view, output) = MainModuleConfigurator().configure()
+        output.onOpenOTP = { [weak self] type in
+            self?.handleOpeningOtp(with: type)
+        }
         router.setRootModule(view)
+    }
+
+    func showDefaultOtpScreen() {
+        let (view, _) = DefaultOtpFieldModuleConfigurator().configure()
+        router.push(view)
+    }
+
+}
+
+// MARK: - Help Methods
+
+private extension MainCoordinator {
+
+    func handleOpeningOtp(with type: OTPFieldType) {
+        switch type {
+        case .default:
+            showDefaultOtpScreen()
+        case .round:
+            break
+        case .custom:
+            break
+        }
     }
 
 }
