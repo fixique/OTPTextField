@@ -39,6 +39,11 @@ private extension MainCoordinator {
         router.push(view)
     }
 
+    func showRoundOtpScreen() {
+        let (view, _) = RoundOtpFieldModuleConfigurator().configure()
+        router.push(view)
+    }
+
 }
 
 // MARK: - Help Methods
@@ -50,7 +55,7 @@ private extension MainCoordinator {
         case .default:
             showDefaultOtpScreen()
         case .round:
-            break
+            showRoundOtpScreen()
         case .custom:
             break
         }
