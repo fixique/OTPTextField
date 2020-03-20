@@ -31,7 +31,7 @@ enum OTPFieldType: CaseIterable {
         case .round:
             return L10n.OTPFieldType.Round.description(password)
         case .custom:
-            return L10n.OTPFieldType.Custom.title
+            return L10n.OTPFieldType.Custom.description(password)
         }
     }
 

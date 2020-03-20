@@ -26,8 +26,10 @@ internal enum L10n {
 
   internal enum OTPFieldType {
     internal enum Custom {
-      /// Custom input field
-      internal static let description = L10n.tr("Localizable", "OTPFieldType.Custom.description")
+      /// This is an example of a fully custom input field otp. An error state has been added to it. I create a custom pin view and adapter. Correct password is %@
+      internal static func description(_ p1: String) -> String {
+        return L10n.tr("Localizable", "OTPFieldType.Custom.description", p1)
+      }
       /// Custom input field
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Custom.title")
     }

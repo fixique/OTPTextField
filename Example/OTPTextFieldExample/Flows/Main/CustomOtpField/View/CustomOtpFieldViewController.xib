@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customModule="OTPTextFieldExample" customClass="CustomOtpFieldViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomOtpFieldViewController" customModule="OTPTextFieldExample" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="PVM-tD-DyV" id="345-F2-sDD"/>
+                <outlet property="otpField" destination="ECo-qT-RDB" id="Hhr-gb-b5n"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
             </connections>
         </placeholder>
@@ -17,7 +19,32 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVM-tD-DyV">
+                    <rect key="frame" x="24" y="24" width="272" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECo-qT-RDB" customClass="OTPTextField" customModule="OTPTextField">
+                    <rect key="frame" x="65" y="69" width="190" height="62"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="Iv7-as-oEN"/>
+                        <constraint firstAttribute="width" constant="190" id="bv2-Vk-ukI"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Er-8a-cBa" firstAttribute="trailing" secondItem="PVM-tD-DyV" secondAttribute="trailing" constant="24" id="D7u-gE-vfc"/>
+                <constraint firstItem="ECo-qT-RDB" firstAttribute="top" secondItem="PVM-tD-DyV" secondAttribute="bottom" constant="24" id="RTI-rY-9dU"/>
+                <constraint firstItem="PVM-tD-DyV" firstAttribute="leading" secondItem="7Er-8a-cBa" secondAttribute="leading" constant="24" id="TtC-Cy-tCh"/>
+                <constraint firstItem="PVM-tD-DyV" firstAttribute="top" secondItem="7Er-8a-cBa" secondAttribute="top" constant="24" id="Ytv-Vt-NVm"/>
+                <constraint firstItem="ECo-qT-RDB" firstAttribute="centerX" secondItem="7Er-8a-cBa" secondAttribute="centerX" id="ej0-21-zYV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="7Er-8a-cBa"/>
+            <point key="canvasLocation" x="131" y="154"/>
         </view>
     </objects>
 </document>

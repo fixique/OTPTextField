@@ -38,6 +38,9 @@
 		57A3C53A2424DA4E00AB0219 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5392424DA4E00AB0219 /* DefaultNavigationController.swift */; };
 		57A3C53C2424DB8900AB0219 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C53B2424DB8900AB0219 /* NavigationBar.swift */; };
 		57A3C53F2424E40300AB0219 /* OTPFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C53E2424E40300AB0219 /* OTPFieldType.swift */; };
+		57A3C5432425254700AB0219 /* CustomPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5422425254700AB0219 /* CustomPinView.swift */; };
+		57A3C5452425256C00AB0219 /* CustomPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5442425256C00AB0219 /* CustomPinView.xib */; };
+		57A3C5472425281A00AB0219 /* CustomFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5462425281900AB0219 /* CustomFieldAdapter.swift */; };
 		58FA2B648FE95C1825FB9E27 /* Pods_OTPTextFieldExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69E57C2075530B634AD9041 /* Pods_OTPTextFieldExample.framework */; };
 		5DF4C5792F5CD3BD5D8F55CF /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0491F7553925E0D85199469 /* MainCoordinatorOutput.swift */; };
 		5E824DAA59DBB623B4F0F955 /* DefaultOtpFieldPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93965E3F6DEB41B4575D462B /* DefaultOtpFieldPresenter.swift */; };
@@ -109,6 +112,9 @@
 		57A3C5392424DA4E00AB0219 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
 		57A3C53B2424DB8900AB0219 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		57A3C53E2424E40300AB0219 /* OTPFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldType.swift; sourceTree = "<group>"; };
+		57A3C5422425254700AB0219 /* CustomPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinView.swift; sourceTree = "<group>"; };
+		57A3C5442425256C00AB0219 /* CustomPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPinView.xib; sourceTree = "<group>"; };
+		57A3C5462425281900AB0219 /* CustomFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldAdapter.swift; sourceTree = "<group>"; };
 		614ADB3A4C81BA429FD7787D /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		63A8DC00DF40FAEBD9C3E954 /* RoundOtpFieldViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundOtpFieldViewController.swift; sourceTree = "<group>"; };
 		663406EB5B5D8317D4ABD9E9 /* CustomOtpFieldModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomOtpFieldModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -151,7 +157,6 @@
 				1CEC4BA1CD00904B08C9DC4C /* Presenter */,
 				42D4C08CB300643384EAEA3E /* View */,
 			);
-			name = CustomOtpField;
 			path = CustomOtpField;
 			sourceTree = "<group>";
 		};
@@ -160,7 +165,6 @@
 			children = (
 				663406EB5B5D8317D4ABD9E9 /* CustomOtpFieldModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -201,19 +205,18 @@
 				B42B207DF58327A76B14E9B1 /* CustomOtpFieldModuleInput.swift */,
 				72D67F0A790D343C4BD742CD /* CustomOtpFieldModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
 		42D4C08CB300643384EAEA3E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				57A3C5402425252800AB0219 /* CustomOTPField */,
 				29781F0D482F543CA9AD8289 /* CustomOtpFieldViewController.swift */,
 				50858B0356027E863913E0C8 /* CustomOtpFieldViewController.xib */,
 				1346AF16632293DF38468624 /* CustomOtpFieldViewInput.swift */,
 				B8252E87584CA68DEF611B5D /* CustomOtpFieldViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -222,7 +225,6 @@
 			children = (
 				E8116BFCB5EA3BE34D2F55FA /* RoundOtpFieldModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -422,6 +424,24 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		57A3C5402425252800AB0219 /* CustomOTPField */ = {
+			isa = PBXGroup;
+			children = (
+				57A3C5412425253400AB0219 /* CustomPinView */,
+				57A3C5462425281900AB0219 /* CustomFieldAdapter.swift */,
+			);
+			path = CustomOTPField;
+			sourceTree = "<group>";
+		};
+		57A3C5412425253400AB0219 /* CustomPinView */ = {
+			isa = PBXGroup;
+			children = (
+				57A3C5422425254700AB0219 /* CustomPinView.swift */,
+				57A3C5442425256C00AB0219 /* CustomPinView.xib */,
+			);
+			path = CustomPinView;
+			sourceTree = "<group>";
+		};
 		60B639A380647D6F4449A53E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,7 +449,6 @@
 				68F0DBF8FF2865F3224162A3 /* RoundOtpFieldModuleInput.swift */,
 				32474AD4500B94775CE530BF /* RoundOtpFieldModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -519,7 +538,6 @@
 				60B639A380647D6F4449A53E /* Presenter */,
 				E6628D531622C83CBF6B6859 /* View */,
 			);
-			name = RoundOtpField;
 			path = RoundOtpField;
 			sourceTree = "<group>";
 		};
@@ -531,7 +549,6 @@
 				2F7E12AB4F34BD070E8CEA49 /* RoundOtpFieldViewInput.swift */,
 				0BC83CFFADF8632C5AC45AE4 /* RoundOtpFieldViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -599,6 +616,7 @@
 			files = (
 				57A3C5042424C24200AB0219 /* LaunchScreen.xib in Resources */,
 				57A3C50C2424C24200AB0219 /* Localizable.strings in Resources */,
+				57A3C5452425256C00AB0219 /* CustomPinView.xib in Resources */,
 				57A3C5062424C24200AB0219 /* Assets.xcassets in Resources */,
 				57A3C5382424D0CD00AB0219 /* MainFeedCell.xib in Resources */,
 				C6253E0E92CDEB1A18E4AF53 /* MainViewController.xib in Resources */,
@@ -702,6 +720,7 @@
 				57A3C53F2424E40300AB0219 /* OTPFieldType.swift in Sources */,
 				57A3C51E2424C24200AB0219 /* BaseCoordinator.swift in Sources */,
 				57A3C5152424C24200AB0219 /* Colors.swift in Sources */,
+				57A3C5432425254700AB0219 /* CustomPinView.swift in Sources */,
 				57A3C5102424C24200AB0219 /* Fonts.swift in Sources */,
 				57A3C5372424D0CD00AB0219 /* MainFeedCell.swift in Sources */,
 				57A3C5122424C24200AB0219 /* Strings.swift in Sources */,
@@ -727,6 +746,7 @@
 				E445DA4B607394CFB2E1B2C8 /* DefaultOtpFieldViewOutput.swift in Sources */,
 				E4D2CCCFB823793CDD940791 /* RoundOtpFieldModuleConfigurator.swift in Sources */,
 				9C648A4F8548454B9FE4CAB5 /* RoundOtpFieldPresenter.swift in Sources */,
+				57A3C5472425281A00AB0219 /* CustomFieldAdapter.swift in Sources */,
 				66523596D246DA6649612683 /* RoundOtpFieldModuleInput.swift in Sources */,
 				F3084921EFEA474E604D1F45 /* RoundOtpFieldModuleOutput.swift in Sources */,
 				D5A03890F6B9FAD936A09DC1 /* RoundOtpFieldViewController.swift in Sources */,
