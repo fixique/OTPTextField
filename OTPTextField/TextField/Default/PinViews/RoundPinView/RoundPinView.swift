@@ -37,6 +37,14 @@ extension RoundPinView: PinContainer {
         codeLabel.text = nil
     }
 
+    public func setError() {
+        outerContainerView.backgroundColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
+    }
+
+    public func removeError() {
+        outerContainerView.backgroundColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
+    }
+
     public func animateIndicator() {
         setIndicatorActive()
     }

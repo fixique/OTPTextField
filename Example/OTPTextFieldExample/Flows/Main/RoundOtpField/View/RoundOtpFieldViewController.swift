@@ -63,6 +63,25 @@ private extension RoundOtpFieldViewController {
                                                   autocorrectionType: .no,
                                                   allowedCharactersSet: .alphanumerics)
         otpField.setConfiguration(configuration)
+        otpField.onOTPEnter = { [weak self] otpCode in
+            guard otpCode != OTPFieldType.round.password else {
+                return
+            }
+            self?.otpField.setError()
+        }
+        otpField.onTextChanged = { [weak self] code in
+            self?.otpField.removeError()
+        }
+    }
+
+}
+
+// MARK: - Actions
+
+private extension RoundOtpFieldViewController {
+
+    @IBAction private func hideKeyboardDidPressed(_ sender: Any) {
+        view.endEditing(true)
     }
 
 }

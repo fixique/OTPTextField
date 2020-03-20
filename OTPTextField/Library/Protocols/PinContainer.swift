@@ -14,6 +14,10 @@ public protocol PinContainer: class {
     var view: UIView { get }
     /// Method for set character value for view
     func set(value: String?)
+    /// Method should implement error state
+    func setError()
+    /// Method should remove error state
+    func removeError()
     /// Remove characters from view
     func clear()
     /// Method for animate view indicator

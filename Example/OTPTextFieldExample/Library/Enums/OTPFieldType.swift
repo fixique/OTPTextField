@@ -36,6 +36,13 @@ enum OTPFieldType: CaseIterable {
     }
 
     var password: String {
-        return "1234"
+        switch self {
+        case .default:
+            return "1234"
+        case .round:
+            return "123456"
+        case .custom:
+            return "1234"
+        }
     }
 }

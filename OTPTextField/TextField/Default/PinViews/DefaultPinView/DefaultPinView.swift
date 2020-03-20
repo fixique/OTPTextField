@@ -37,6 +37,10 @@ extension DefaultPinView: PinContainer {
         codeLabel.text = nil
     }
 
+    public func setError() {}
+
+    public func removeError() {}
+
     public func animateIndicator() {
         startIndicatorAnimation()
     }

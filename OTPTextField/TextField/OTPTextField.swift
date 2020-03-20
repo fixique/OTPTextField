@@ -51,14 +51,11 @@ public final class OTPTextField: BaseInputView {
         return configuration.adapter.numberOfPins()
     }
     private var pinViews: [PinContainer] = []
-    private var text: String? {
-        didSet {
-            notifyIfTextChanged()
-        }
-    }
+    private var text: String?
     private var currentCharactersCount: Int {
         return text?.count ?? 0
     }
+    private var isError = false
 
     // MARK: - Initialization
 
@@ -94,7 +91,9 @@ public final class OTPTextField: BaseInputView {
     @discardableResult
     override public func resignFirstResponder() -> Bool {
         onEndEditing?()
-        pinViews.forEach { $0.removeIndicator() }
+        if !isError {
+            pinViews.forEach { $0.removeIndicator() }
+        }
         return super.resignFirstResponder()
     }
 
@@ -116,6 +115,7 @@ public final class OTPTextField: BaseInputView {
         pinViews[safe: currentCharactersCount - 1]?.animateIndicator()
         pinViews[safe: currentCharactersCount]?.removeIndicator()
         text?.removeLast()
+        notifyIfTextChanged()
     }
 
     // MARK: - Touches
@@ -148,9 +148,25 @@ public final class OTPTextField: BaseInputView {
         insertCharacters(text)
     }
 
+    /// Method will affect all pin views and set error state
+    public func setError() {
+        isError = true
+        pinViews.forEach { $0.setError() }
+    }
+
+    /// Method will affect all pin views and remove state
+    public func removeError() {
+        guard isError else {
+            return
+        }
+        isError = false
+        pinViews.filter { $0.view != pinViews[safe: currentCharactersCount]?.view }.forEach { $0.removeError() }
+    }
+
     /// Method will clear text field
     public func clear() {
         text = nil
+        notifyIfTextChanged()
         updateUI()
     }
 
@@ -229,6 +245,7 @@ private extension OTPTextField {
             pinViews[safe: currentCharactersCount - 1]?.set(value: characters)
             pinViews[safe: currentCharactersCount]?.animateIndicator()
         }
+        notifyIfTextChanged()
     }
 
     /// Method will triggered if all pins filled
