@@ -57,17 +57,17 @@ private extension RoundPinView {
     }
 
     func configureContainerViews() {
-        outerContainerView.backgroundColor = UIColor(red: 67 / 255, green: 57 / 255, blue: 69 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
         outerContainerView.layer.cornerRadius = outerContainerView.frame.height / 2
         outerContainerView.layer.masksToBounds = true
 
-        innerContainerView.backgroundColor = UIColor(red: 15 / 255, green: 12 / 255, blue: 15 / 255, alpha: 1.0)
+        innerContainerView.backgroundColor = UIColor(red: 242 / 255, green: 242 / 255, blue: 242 / 255, alpha: 1.0)
         innerContainerView.layer.cornerRadius = innerContainerView.frame.height / 2
         innerContainerView.layer.masksToBounds = true
     }
 
     func configureCodeLabel() {
-        codeLabel.textColor = .white
+        codeLabel.textColor = UIColor(red: 34 / 255, green: 34 / 255, blue: 34 / 255, alpha: 1.0)
         codeLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
         codeLabel.textAlignment = .center
         codeLabel.text = nil
@@ -80,11 +80,11 @@ private extension RoundPinView {
 private extension RoundPinView {
 
     func setIndicatorActive() {
-        outerContainerView.backgroundColor = UIColor(red: 181 / 255, green: 127 / 255, blue: 255 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
     }
 
     func setIndicatorInactive() {
-        outerContainerView.backgroundColor = UIColor(red: 67 / 255, green: 57 / 255, blue: 69 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
     }
 
 }

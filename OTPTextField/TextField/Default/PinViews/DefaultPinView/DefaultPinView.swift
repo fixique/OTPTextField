@@ -71,7 +71,7 @@ private extension DefaultPinView {
     }
 
     func configureIndicatorView() {
-        indicatorView.backgroundColor = UIColor(red: 130 / 255, green: 0, blue: 104 / 255, alpha: 1.0)
+        indicatorView.backgroundColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
         indicatorView.isHidden = true
     }
 

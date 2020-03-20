@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customModule="OTPTextFieldExample" customClass="RoundOtpFieldViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundOtpFieldViewController" customModule="OTPTextFieldExample" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="eey-C6-Hub" id="V0h-fJ-jYf"/>
+                <outlet property="otpField" destination="fce-IT-RZv" id="dPa-Pr-hTG"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
             </connections>
         </placeholder>
@@ -17,7 +19,32 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eey-C6-Hub">
+                    <rect key="frame" x="24" y="24" width="272" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fce-IT-RZv" customClass="OTPTextField" customModule="OTPTextField">
+                    <rect key="frame" x="15" y="69" width="290" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="Ein-Bw-xx9"/>
+                        <constraint firstAttribute="height" constant="44" id="gVi-X9-sy2"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eey-C6-Hub" firstAttribute="leading" secondItem="d7Y-5q-t0T" secondAttribute="leading" constant="24" id="1og-xl-IhB"/>
+                <constraint firstItem="fce-IT-RZv" firstAttribute="top" secondItem="eey-C6-Hub" secondAttribute="bottom" constant="24" id="2XK-E5-sD8"/>
+                <constraint firstItem="eey-C6-Hub" firstAttribute="top" secondItem="d7Y-5q-t0T" secondAttribute="top" constant="24" id="7ez-Fp-bet"/>
+                <constraint firstItem="d7Y-5q-t0T" firstAttribute="trailing" secondItem="eey-C6-Hub" secondAttribute="trailing" constant="24" id="NH1-Jx-m74"/>
+                <constraint firstItem="fce-IT-RZv" firstAttribute="centerX" secondItem="d7Y-5q-t0T" secondAttribute="centerX" id="e2U-3u-lnN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="d7Y-5q-t0T"/>
+            <point key="canvasLocation" x="131" y="154"/>
         </view>
     </objects>
 </document>

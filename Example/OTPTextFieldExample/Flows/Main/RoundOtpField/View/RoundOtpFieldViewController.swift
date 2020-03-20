@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import OTPTextField
 
 final class RoundOtpFieldViewController: UIViewController {
+
+    // MARK: - IBOutlets
+
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var otpField: OTPTextField!
 
     // MARK: - Properties
 
@@ -29,6 +35,8 @@ extension RoundOtpFieldViewController: RoundOtpFieldViewInput {
 
     func setupInitialState() {
         configureNavigationBar()
+        configureDescription()
+        configureOtpField()
     }
 
 }
@@ -39,6 +47,22 @@ private extension RoundOtpFieldViewController {
 
     func configureNavigationBar() {
         title = OTPFieldType.round.title
+    }
+
+    func configureDescription() {
+        descriptionLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        descriptionLabel.textColor = Colors.Figma.defaultText
+        descriptionLabel.text = OTPFieldType.round.description
+        descriptionLabel.numberOfLines = 0
+    }
+
+    func configureOtpField() {
+        let configuration = OTPFieldConfiguration(adapter: RoundTextFieldAdapter(),
+                                                  keyboardType: .namePhonePad,
+                                                  keyboardAppearance: .light,
+                                                  autocorrectionType: .no,
+                                                  allowedCharactersSet: .alphanumerics)
+        otpField.setConfiguration(configuration)
     }
 
 }
