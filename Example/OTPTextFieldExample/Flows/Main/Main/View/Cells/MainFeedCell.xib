@@ -18,16 +18,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pci-hT-apK">
-                        <rect key="frame" x="16" y="10" width="288" height="58"/>
+                        <rect key="frame" x="16" y="5" width="288" height="68"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR9-Nz-IaW">
-                                <rect key="frame" x="16" y="19" width="228" height="21"/>
+                                <rect key="frame" x="16" y="19" width="228" height="31"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ipr-Dy-Mc8">
-                                <rect key="frame" x="254" y="17" width="24" height="24"/>
+                                <rect key="frame" x="254" y="22" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="VmY-Xr-vDL"/>
                                     <constraint firstAttribute="height" constant="24" id="tAo-M1-Wxt"/>
@@ -46,10 +46,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Pci-hT-apK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OPR-s4-yyg"/>
+                    <constraint firstItem="Pci-hT-apK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OPR-s4-yyg"/>
                     <constraint firstAttribute="trailing" secondItem="Pci-hT-apK" secondAttribute="trailing" constant="16" id="Pjb-Jo-m4z"/>
                     <constraint firstItem="Pci-hT-apK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="W1g-4P-iLM"/>
-                    <constraint firstAttribute="bottom" secondItem="Pci-hT-apK" secondAttribute="bottom" constant="10" id="egh-cf-xfq"/>
+                    <constraint firstAttribute="bottom" secondItem="Pci-hT-apK" secondAttribute="bottom" constant="5" id="egh-cf-xfq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

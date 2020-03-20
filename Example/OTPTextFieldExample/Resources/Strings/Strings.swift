@@ -16,6 +16,21 @@ internal enum L10n {
     /// Examples
     internal static let title = L10n.tr("Localizable", "Main.Title")
   }
+
+  internal enum OTPFieldType {
+    internal enum Custom {
+      /// Custom input field
+      internal static let title = L10n.tr("Localizable", "OTPFieldType.Custom.title")
+    }
+    internal enum Default {
+      /// Default input field
+      internal static let title = L10n.tr("Localizable", "OTPFieldType.Default.title")
+    }
+    internal enum Round {
+      /// Round input field
+      internal static let title = L10n.tr("Localizable", "OTPFieldType.Round.title")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

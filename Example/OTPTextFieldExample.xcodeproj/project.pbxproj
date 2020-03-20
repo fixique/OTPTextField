@@ -28,6 +28,8 @@
 		57A3C52B2424C24200AB0219 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C52A2424C24200AB0219 /* DeepLinkOption.swift */; };
 		57A3C5372424D0CD00AB0219 /* MainFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5352424D0CD00AB0219 /* MainFeedCell.swift */; };
 		57A3C5382424D0CD00AB0219 /* MainFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5362424D0CD00AB0219 /* MainFeedCell.xib */; };
+		57A3C53A2424DA4E00AB0219 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5392424DA4E00AB0219 /* DefaultNavigationController.swift */; };
+		57A3C53C2424DB8900AB0219 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C53B2424DB8900AB0219 /* NavigationBar.swift */; };
 		58FA2B648FE95C1825FB9E27 /* Pods_OTPTextFieldExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69E57C2075530B634AD9041 /* Pods_OTPTextFieldExample.framework */; };
 		5DF4C5792F5CD3BD5D8F55CF /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0491F7553925E0D85199469 /* MainCoordinatorOutput.swift */; };
 		8F3EEC6313FFB239DF818EBF /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ADB3A4C81BA429FD7787D /* MainPresenter.swift */; };
@@ -68,6 +70,8 @@
 		57A3C52E2424C24200AB0219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57A3C5352424D0CD00AB0219 /* MainFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedCell.swift; sourceTree = "<group>"; };
 		57A3C5362424D0CD00AB0219 /* MainFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainFeedCell.xib; sourceTree = "<group>"; };
+		57A3C5392424DA4E00AB0219 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
+		57A3C53B2424DB8900AB0219 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		614ADB3A4C81BA429FD7787D /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		808CBF6C8958F8703053E6A0 /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		971FAE21CFA4F4CF77C84DD3 /* Pods-OTPTextFieldExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPTextFieldExample.release.xcconfig"; path = "Target Support Files/Pods-OTPTextFieldExample/Pods-OTPTextFieldExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				57A3C51D2424C24200AB0219 /* BaseCoordinator.swift */,
+				57A3C5392424DA4E00AB0219 /* DefaultNavigationController.swift */,
 			);
 			path = "Base Classes";
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				57A3C5202424C24200AB0219 /* UIApplication.swift */,
+				57A3C53B2424DB8900AB0219 /* NavigationBar.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				57A3C5232424C24200AB0219 /* Coordinator.swift in Sources */,
 				57A3C50E2424C24200AB0219 /* Assets.swift in Sources */,
 				57A3C5272424C24200AB0219 /* Router.swift in Sources */,
+				57A3C53A2424DA4E00AB0219 /* DefaultNavigationController.swift in Sources */,
 				57A3C5212424C24200AB0219 /* UIApplication.swift in Sources */,
 				57A3C52B2424C24200AB0219 /* DeepLinkOption.swift in Sources */,
 				57A3C51E2424C24200AB0219 /* BaseCoordinator.swift in Sources */,
@@ -507,6 +514,7 @@
 				57A3C5102424C24200AB0219 /* Fonts.swift in Sources */,
 				57A3C5372424D0CD00AB0219 /* MainFeedCell.swift in Sources */,
 				57A3C5122424C24200AB0219 /* Strings.swift in Sources */,
+				57A3C53C2424DB8900AB0219 /* NavigationBar.swift in Sources */,
 				57A3C5082424C24200AB0219 /* AppDelegate.swift in Sources */,
 				57A3C5292424C24200AB0219 /* MainRouter.swift in Sources */,
 				57A3C5252424C24200AB0219 /* Presentable.swift in Sources */,

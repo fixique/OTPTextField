@@ -3,3 +3,8 @@
 
 "Main.Title" = "Examples";
 
+// MARK: - OTPFieldType
+
+"OTPFieldType.Default.title" = "Default input field";
+"OTPFieldType.Round.title" = "Round input field";
+"OTPFieldType.Custom.title" = "Custom input field";

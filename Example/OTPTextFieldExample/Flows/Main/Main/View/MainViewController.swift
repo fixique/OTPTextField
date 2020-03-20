@@ -17,11 +17,11 @@ enum OTPFieldType: CaseIterable {
     var title: String {
         switch self {
         case .default:
-            return "Default input field"
+            return L10n.OTPFieldType.Default.title
         case .round:
-            return "Round input field"
+            return L10n.OTPFieldType.Round.title
         case .custom:
-            return "Custom input field"
+            return L10n.OTPFieldType.Custom.title
         }
     }
 }
@@ -54,6 +54,7 @@ final class MainViewController: UIViewController {
 extension MainViewController: MainViewInput {
 
     func setupInitialState() {
+        configureNavigationBar()
         configureTableView()
         fillTable()
     }
@@ -64,6 +65,11 @@ extension MainViewController: MainViewInput {
 
 private extension MainViewController {
 
+    func configureNavigationBar() {
+        title = L10n.Main.title
+        navigationController?.navigationBar.applyWhiteStyle()
+    }
+
     func configureTableView() {
         tableView.alwaysBounceVertical = true
         tableView.separatorStyle = .none
@@ -71,6 +77,7 @@ private extension MainViewController {
         tableView.backgroundColor = .clear
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
+        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
     }
 
     func fillTable() {

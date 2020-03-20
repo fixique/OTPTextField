@@ -8,5 +8,6 @@ enum Colors {
         static let defaultBackground = Asset.Colors.background.color
         static let negativeBackground = Asset.Colors.contaienrBackground.color
         static let defaultText = Asset.Colors.textColor.color
+        static let defaultRed = Asset.Colors.red.color
     }
 }
