@@ -9,8 +9,8 @@
 "OTPFieldType.Round.title" = "Round input field";
 "OTPFieldType.Custom.title" = "Custom input field";
 
-"OTPFieldType.Default.description" = "This is an example of a default input field. An error state has been added to it. Correct password %@";
-"OTPFieldType.Round.description" = "Round input field";
+"OTPFieldType.Default.description" = "This is an example of a default input field. An error state has been added to it. Correct password is %@";
+"OTPFieldType.Round.description" = "This is an example of a default rounded input field. An error state has been added to it. Correct password is %@";
 "OTPFieldType.Custom.description" = "Custom input field";
 
 // MARK: - Errors

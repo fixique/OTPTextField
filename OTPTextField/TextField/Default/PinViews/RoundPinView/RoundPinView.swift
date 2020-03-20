@@ -88,7 +88,7 @@ private extension RoundPinView {
 private extension RoundPinView {
 
     func setIndicatorActive() {
-        outerContainerView.backgroundColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
+        outerContainerView.backgroundColor = UIColor(red: 50 / 255, green: 0, blue: 156 / 255, alpha: 1.0)
     }
 
     func setIndicatorInactive() {
