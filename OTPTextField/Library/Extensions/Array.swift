@@ -6,7 +6,7 @@
 //  Copyright © 2020 Fixique. All rights reserved.
 //
 
-public extension Array {
+extension Array {
 
     subscript (safe index: Int) -> Element? {
         return indices ~= index ? self[index] : nil
