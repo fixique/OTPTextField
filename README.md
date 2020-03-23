@@ -13,7 +13,9 @@ This library provides the ability to quickly implement the SMS input field. By d
 3. Ability to animate an input indicator
 4. Ability to handle error state
 
-![exampleVideo](Images/exampleVideo.gif)
+<p align="center">
+	<img src="Images/exampleVideo.gif" />
+</p>
 
 ## Installation
 
@@ -71,6 +73,6 @@ In order to implement cutom field:
 
 ## License
 
-OTPTextField is released under the MIT license. [See LICENSE]() for details.
+OTPTextField is released under the MIT license. [See LICENSE](https://github.com/fixique/OTPTextField/blob/master/LICENSE) for details.
 
  
