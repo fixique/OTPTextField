@@ -1,6 +1,6 @@
 # OTPTextField
 
-
+[![Build Status](https://travis-ci.com/fixique/OTPTextField.svg?branch=master)](https://travis-ci.com/fixique/OTPTextField)
 
 ## Overview 
 
