@@ -1,0 +1,10 @@
+language: Swift
+osx_image: xcode11.3
+xcode_project: OTPTextField.xcodeproj
+xcode_scheme: OTPTextField
+before_install:
+  - gem install xcpretty -N
+  - make init
+script:
+  - set -o pipefail
+  - xcodebuild clean build -sdk iphonesimulator -workspace OTPTextField.xcworkspace -scheme OTPTextField CODE_SIGNING_REQUIRED=NO | xcpretty -c
