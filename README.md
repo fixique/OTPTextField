@@ -24,7 +24,7 @@ This library provides the ability to quickly implement the SMS input field. By d
 [CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate OTPTextField into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'OTPTextField', '~> 1.0.0'
+pod 'SFOTPTextField', '~> 1.0.0'
 ```
 
 
