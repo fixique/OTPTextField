@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
-  s.name = "OTPTextField"
-  s.version = "0.1.0"
+  s.name = "SFOTPTextField"
+  s.version = "1.0.0"
   s.summary = "This library makes it easy to implement SMS input field with the ability to automatically substitute code from SMS messages"
   s.homepage = "https://github.com/fixique/OTPTextField"
   s.license = { :type => "MIT", :file => "LICENSE" }
@@ -15,6 +15,5 @@ Pod::Spec.new do |s|
 
 
   s.framework  = "UIKit"
-  # s.dependency 'SurfUtils/XibView', '10.0.5'
 
 end
