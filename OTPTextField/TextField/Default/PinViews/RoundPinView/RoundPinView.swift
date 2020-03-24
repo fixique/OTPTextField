@@ -10,6 +10,14 @@ import UIKit
 
 final class RoundPinView: UIView {
 
+    // MARK: - Constants
+
+    private enum Constants {
+        static let errorColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
+        static let defaultColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
+        static let indicatorColor = UIColor(red: 50 / 255, green: 0, blue: 156 / 255, alpha: 1.0)
+    }
+
     // MARK: - IBOutlets
 
     @IBOutlet private weak var outerContainerView: UIView!
@@ -38,11 +46,11 @@ extension RoundPinView: PinContainer {
     }
 
     public func setError() {
-        outerContainerView.backgroundColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
+        outerContainerView.backgroundColor = Constants.errorColor
     }
 
     public func removeError() {
-        outerContainerView.backgroundColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = Constants.defaultColor
     }
 
     public func animateIndicator() {
@@ -65,7 +73,7 @@ private extension RoundPinView {
     }
 
     func configureContainerViews() {
-        outerContainerView.backgroundColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = Constants.defaultColor
         outerContainerView.layer.cornerRadius = outerContainerView.frame.height / 2
         outerContainerView.layer.masksToBounds = true
 
@@ -88,11 +96,11 @@ private extension RoundPinView {
 private extension RoundPinView {
 
     func setIndicatorActive() {
-        outerContainerView.backgroundColor = UIColor(red: 50 / 255, green: 0, blue: 156 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = Constants.indicatorColor
     }
 
     func setIndicatorInactive() {
-        outerContainerView.backgroundColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1.0)
+        outerContainerView.backgroundColor = Constants.defaultColor
     }
 
 }
