@@ -1,6 +1,6 @@
 # OTPTextField
 
-[![Build Status](https://travis-ci.com/fixique/OTPTextField.svg?branch=master)](https://travis-ci.com/fixique/OTPTextField) [![codebeat badge](https://codebeat.co/badges/b5135007-19cb-45e1-80cc-aa80b8ccd9f8)](https://codebeat.co/projects/github-com-fixique-otptextfield-master)
+[![Build Status](https://travis-ci.com/fixique/OTPTextField.svg?branch=master)](https://travis-ci.com/fixique/OTPTextField) [![codebeat badge](https://codebeat.co/badges/b5135007-19cb-45e1-80cc-aa80b8ccd9f8)](https://codebeat.co/projects/github-com-fixique-otptextfield-master) ![Swift Version](https://img.shields.io/badge/swift-5.0-orange) ![LISENCE](https://img.shields.io/badge/LICENSE-MIT-green)
 
 ## Overview 
 
