@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import OTPTextField
+import SFOTPTextField
 import SurfUtils
 
 final class CustomFieldAdapter: NSObject {
