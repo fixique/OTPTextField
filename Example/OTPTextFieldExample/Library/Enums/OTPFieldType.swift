@@ -12,6 +12,7 @@ enum OTPFieldType: CaseIterable {
     case `default`
     case round
     case custom
+    case plain
 
     var title: String {
         switch self {
@@ -21,6 +22,8 @@ enum OTPFieldType: CaseIterable {
             return L10n.OTPFieldType.Round.title
         case .custom:
             return L10n.OTPFieldType.Custom.title
+        case .plain:
+            return L10n.OTPFieldType.Plain.title
         }
     }
 
@@ -32,6 +35,8 @@ enum OTPFieldType: CaseIterable {
             return L10n.OTPFieldType.Round.description(password)
         case .custom:
             return L10n.OTPFieldType.Custom.description(password)
+        case .plain:
+            return L10n.OTPFieldType.Plain.description(password)
         }
     }
 
@@ -43,6 +48,8 @@ enum OTPFieldType: CaseIterable {
             return "123456"
         case .custom:
             return "1234"
+        case .plain:
+            return "123456"
         }
     }
 }
