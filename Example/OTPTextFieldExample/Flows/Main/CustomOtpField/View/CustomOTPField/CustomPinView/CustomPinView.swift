@@ -38,10 +38,10 @@ extension CustomPinView: PinContainer {
     }
 
     func setupState(isActive: Bool, isError: Bool) {
-        if isActive {
-            indicatorView.backgroundColor = Colors.Figma.defaultBlue
+        if isError {
+            indicatorView.backgroundColor = Colors.Figma.defaultRed
         } else {
-            let color = isError ? Colors.Figma.defaultRed : Colors.Figma.negativeBackground
+            let color = isActive ? Colors.Figma.defaultBlue : Colors.Figma.negativeBackground
             indicatorView.backgroundColor = color
         }
     }
