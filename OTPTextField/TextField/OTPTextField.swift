@@ -91,9 +91,7 @@ public final class OTPTextField: BaseInputView {
     @discardableResult
     override public func resignFirstResponder() -> Bool {
         onEndEditing?()
-        if !isError {
-            pinViews.forEach { $0.removeIndicator() }
-        }
+        pinViews.forEach { $0.setupState(isActive: false, isError: isError) }
         return super.resignFirstResponder()
     }
 
@@ -112,8 +110,8 @@ public final class OTPTextField: BaseInputView {
             return
         }
         pinViews[safe: currentCharactersCount - 1]?.clear()
-        pinViews[safe: currentCharactersCount - 1]?.animateIndicator()
-        pinViews[safe: currentCharactersCount]?.removeIndicator()
+        pinViews[safe: currentCharactersCount - 1]?.setupState(isActive: true, isError: isError)
+        pinViews[safe: currentCharactersCount]?.setupState(isActive: false, isError: isError)
         text?.removeLast()
         notifyIfTextChanged()
     }
@@ -151,7 +149,10 @@ public final class OTPTextField: BaseInputView {
     /// Method will affect all pin views and set error state
     public func setError() {
         isError = true
-        pinViews.forEach { $0.setError() }
+        let activeIndex = isFirstResponder ? currentCharactersCount : nil
+        for (index, pin) in pinViews.enumerated() {
+            pin.setupState(isActive: index == activeIndex, isError: isError)
+        }
     }
 
     /// Method will affect all pin views and remove state
@@ -160,7 +161,10 @@ public final class OTPTextField: BaseInputView {
             return
         }
         isError = false
-        pinViews.filter { $0.view != pinViews[safe: currentCharactersCount]?.view }.forEach { $0.removeError() }
+        let activeIndex = isFirstResponder ? currentCharactersCount : nil
+        for (index, pin) in pinViews.enumerated() {
+            pin.setupState(isActive: index == activeIndex, isError: isError)
+        }
     }
 
     /// Method will clear text field
@@ -234,16 +238,16 @@ private extension OTPTextField {
             return
         }
         if characters.count > 1 {
-            pinViews.forEach { $0.removeIndicator() }
+            pinViews.forEach { $0.setupState(isActive: false, isError: isError) }
             for (index, char) in characters.enumerated() {
                 pinViews[safe: index]?.set(value: String(char))
             }
             text = characters
         } else {
             text = text.map { $0 + characters } ?? characters
-            pinViews[safe: currentCharactersCount - 1]?.removeIndicator()
+            pinViews[safe: currentCharactersCount - 1]?.setupState(isActive: false, isError: isError)
             pinViews[safe: currentCharactersCount - 1]?.set(value: characters)
-            pinViews[safe: currentCharactersCount]?.animateIndicator()
+            pinViews[safe: currentCharactersCount]?.setupState(isActive: true, isError: isError)
         }
         notifyIfTextChanged()
     }
@@ -260,10 +264,10 @@ private extension OTPTextField {
     /// Method will animate indicator on current empty pin view
     func manageIndicatorOnBecomeResponder() {
         guard let text = text else {
-            pinViews[safe: 0]?.animateIndicator()
+            pinViews[safe: 0]?.setupState(isActive: true, isError: isError)
             return
         }
-        pinViews[safe: text.count]?.animateIndicator()
+        pinViews[safe: text.count]?.setupState(isActive: true, isError: isError)
     }
 
 }

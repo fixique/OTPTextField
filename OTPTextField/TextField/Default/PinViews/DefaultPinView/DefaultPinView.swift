@@ -37,16 +37,12 @@ extension DefaultPinView: PinContainer {
         codeLabel.text = nil
     }
 
-    public func setError() {}
-
-    public func removeError() {}
-
-    public func animateIndicator() {
-        startIndicatorAnimation()
-    }
-
-    public func removeIndicator() {
-        stopIndicatorAnimation()
+    public func setupState(isActive: Bool, isError: Bool) {
+        if isActive && indicatorView.isHidden {
+            startIndicatorAnimation()
+        } else if !isActive {
+            stopIndicatorAnimation()
+        }
     }
 
 }
