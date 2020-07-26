@@ -1,15 +1,15 @@
 //
-//  CustomOtpFieldViewController.swift
+//  PlainOtpFieldViewController.swift
 //  OTPTextFieldExample
 //
-//  Created by Krupenko Validislav on 20/03/2020.
+//  Created by Александр Чаусов on 25/07/2020.
 //  Copyright © 2020 Fixique. All rights reserved.
 //
 
 import UIKit
 import SFOTPTextField
 
-final class CustomOtpFieldViewController: UIViewController {
+final class PlainOtpFieldViewController: UIViewController {
 
     // MARK: - IBOutlets
 
@@ -18,7 +18,7 @@ final class CustomOtpFieldViewController: UIViewController {
 
     // MARK: - Properties
 
-    var output: CustomOtpFieldViewOutput?
+    var output: PlainOtpFieldViewOutput?
 
     // MARK: - UIViewController
 
@@ -29,9 +29,9 @@ final class CustomOtpFieldViewController: UIViewController {
 
 }
 
-// MARK: - CustomOtpFieldViewInput
+// MARK: - PlainOtpFieldViewInput
 
-extension CustomOtpFieldViewController: CustomOtpFieldViewInput {
+extension PlainOtpFieldViewController: PlainOtpFieldViewInput {
 
     func setupInitialState() {
         configureNavigationBar()
@@ -43,28 +43,31 @@ extension CustomOtpFieldViewController: CustomOtpFieldViewInput {
 
 // MARK: - Configuration
 
-private extension CustomOtpFieldViewController {
+private extension PlainOtpFieldViewController {
 
     func configureNavigationBar() {
-        title = OTPFieldType.custom.title
+        title = OTPFieldType.plain.title
     }
 
     func configureDescription() {
         descriptionLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         descriptionLabel.textColor = Colors.Figma.defaultText
-        descriptionLabel.text = OTPFieldType.custom.description
+        descriptionLabel.text = OTPFieldType.plain.description
         descriptionLabel.numberOfLines = 0
     }
 
     func configureOtpField() {
-        let configuration = OTPFieldConfiguration(adapter: CustomFieldAdapter())
+        let configuration = OTPFieldConfiguration(adapter: PlainOTPFieldAdapter())
         otpField.setConfiguration(configuration)
         otpField.onOTPEnter = { [weak self] otpCode in
-            guard otpCode != OTPFieldType.custom.password else {
+            guard otpCode != OTPFieldType.plain.password else {
                 return
             }
             self?.otpField.clear()
             self?.otpField.setError()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+                self?.otpField.removeError()
+            }
         }
         otpField.onTextChanged = { [weak self] code in
             self?.otpField.removeError()

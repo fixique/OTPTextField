@@ -45,20 +45,13 @@ extension RoundPinView: PinContainer {
         codeLabel.text = nil
     }
 
-    public func setError() {
-        outerContainerView.backgroundColor = Constants.errorColor
-    }
-
-    public func removeError() {
-        outerContainerView.backgroundColor = Constants.defaultColor
-    }
-
-    public func animateIndicator() {
-        setIndicatorActive()
-    }
-
-    public func removeIndicator() {
-        setIndicatorInactive()
+    public func setupState(isActive: Bool, isError: Bool) {
+        if isActive {
+            outerContainerView.backgroundColor = Constants.indicatorColor
+        } else {
+            let color = isError ? Constants.errorColor : Constants.defaultColor
+            outerContainerView.backgroundColor = color
+        }
     }
 
 }
@@ -87,20 +80,6 @@ private extension RoundPinView {
         codeLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
         codeLabel.textAlignment = .center
         codeLabel.text = nil
-    }
-
-}
-
-// MARK: - Animation
-
-private extension RoundPinView {
-
-    func setIndicatorActive() {
-        outerContainerView.backgroundColor = Constants.indicatorColor
-    }
-
-    func setIndicatorInactive() {
-        outerContainerView.backgroundColor = Constants.defaultColor
     }
 
 }

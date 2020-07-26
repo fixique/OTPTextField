@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlainPinView" customModule="OTPTextFieldExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8U-kT-Doa">
+                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMj-Mf-PPB">
+                    <rect key="frame" x="0.0" y="0.0" width="2" height="32"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="HIS-Ra-VGP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-d5-lpc">
+                    <rect key="frame" x="12" y="12" width="8" height="8"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="gkw-NV-Nkf"/>
+                        <constraint firstAttribute="height" constant="8" id="sXR-Aq-JTt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bA8-d5-lpc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BwR-t7-k7B"/>
+                <constraint firstAttribute="trailing" secondItem="b8U-kT-Doa" secondAttribute="trailing" id="LiK-K3-Olb"/>
+                <constraint firstItem="b8U-kT-Doa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OAN-BK-igx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b8U-kT-Doa" secondAttribute="bottom" id="ab3-5R-vJu"/>
+                <constraint firstItem="vMj-Mf-PPB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bYi-gd-H8K"/>
+                <constraint firstAttribute="bottom" secondItem="vMj-Mf-PPB" secondAttribute="bottom" id="hOj-e2-gSx"/>
+                <constraint firstItem="bA8-d5-lpc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k90-Eq-Qul"/>
+                <constraint firstItem="b8U-kT-Doa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xti-HN-6rm"/>
+                <constraint firstItem="vMj-Mf-PPB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zwC-8i-NEG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="codeLabel" destination="b8U-kT-Doa" id="3wv-Tw-eYU"/>
+                <outlet property="indicatorView" destination="vMj-Mf-PPB" id="U63-2t-4Ro"/>
+                <outlet property="placeholderView" destination="bA8-d5-lpc" id="VV9-Hx-020"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="129"/>
+        </view>
+    </objects>
+</document>

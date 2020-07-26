@@ -41,6 +41,14 @@ internal enum L10n {
       /// Default input field
       internal static let title = L10n.tr("Localizable", "OTPFieldType.Default.title")
     }
+    internal enum Plain {
+      /// This is an example of a fully custom input field otp. Very similar to customOtpField. Has custom behavior, due to which the error is reset on its own after two seconds. Correct password is %@
+      internal static func description(_ p1: String) -> String {
+        return L10n.tr("Localizable", "OTPFieldType.Plain.description", p1)
+      }
+      /// Plain input field
+      internal static let title = L10n.tr("Localizable", "OTPFieldType.Plain.title")
+    }
     internal enum Round {
       /// This is an example of a default rounded input field. An error state has been added to it. Correct password is %@
       internal static func description(_ p1: String) -> String {

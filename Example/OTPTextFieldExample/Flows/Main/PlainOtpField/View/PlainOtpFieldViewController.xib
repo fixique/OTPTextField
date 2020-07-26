@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlainOtpFieldViewController" customModule="OTPTextFieldExample" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="Yet-N8-ZM5" id="TSO-Mw-aLc"/>
+                <outlet property="otpField" destination="k16-Gr-pdo" id="iHJ-M2-QkR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-N8-ZM5">
+                    <rect key="frame" x="16" y="24" width="288" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k16-Gr-pdo" customClass="OTPTextField" customModule="SFOTPTextField">
+                    <rect key="frame" x="64" y="69" width="192" height="32"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="3Hp-Wh-R3k"/>
+                        <constraint firstAttribute="width" constant="192" id="exv-Vn-juQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k16-Gr-pdo" firstAttribute="top" secondItem="Yet-N8-ZM5" secondAttribute="bottom" constant="24" id="OAo-X6-S4G"/>
+                <constraint firstItem="k16-Gr-pdo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VMy-m8-P0d"/>
+                <constraint firstItem="Yet-N8-ZM5" firstAttribute="top" secondItem="fZO-gv-KXM" secondAttribute="top" constant="24" id="bGS-ap-zNx"/>
+                <constraint firstItem="Yet-N8-ZM5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="f17-AH-6Eh"/>
+                <constraint firstAttribute="trailing" secondItem="Yet-N8-ZM5" secondAttribute="trailing" constant="16" id="yjH-dj-iif"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fZO-gv-KXM"/>
+            <point key="canvasLocation" x="131" y="154"/>
+        </view>
+    </objects>
+</document>

@@ -1,37 +1,36 @@
 //
-//  CustomFieldAdapter.swift
+//  PlainOTPFieldAdapter.swift
 //  OTPTextFieldExample
 //
-//  Created by Vladislav Krupenko on 20.03.2020.
+//  Created by Александр Чаусов on 25/07/2020.
 //  Copyright © 2020 Fixique. All rights reserved.
 //
 
 import UIKit
 import SFOTPTextField
-import SurfUtils
 
-final class CustomFieldAdapter: NSObject {
+final class PlainOTPFieldAdapter: NSObject {
 
     // MARK: - Constants
 
     private enum Constants {
-        static let numberOfPins = 4
-        static let pinSize = CGSize(width: 40, height: 62)
-        static let space: CGFloat = 10
+        static let numberOfPins = 6
+        static let pinSize = CGSize(width: 32, height: 32)
+        static let space: CGFloat = 0
     }
 
 }
 
 // MARK: - OTPTextFieldData
 
-extension CustomFieldAdapter: OTPTextFieldData {
+extension PlainOTPFieldAdapter: OTPTextFieldData {
 
     public func numberOfPins() -> Int {
         return Constants.numberOfPins
     }
 
     public func otpTextField(viewAt index: Int) -> PinContainer {
-        guard let pinView = CustomPinView.loadFromNib() as? PinContainer else {
+        guard let pinView = PlainPinView.loadFromNib() as? PinContainer else {
             fatalError("Can't find class for init pinField")
         }
         return pinView
