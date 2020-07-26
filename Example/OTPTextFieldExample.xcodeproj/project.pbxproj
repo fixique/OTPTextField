@@ -9,15 +9,20 @@
 /* Begin PBXBuildFile section */
 		001EBC7F44EC7BDB090F32C3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1235D35CF71609F099221E45 /* MainCoordinator.swift */; };
 		180D168CE1B8D4130F477FF8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902184A5B42D3BE892DAB51 /* MainViewController.swift */; };
+		18310A80F4B9D67A5E1084D0 /* PlainOtpFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C2FA792A43B4CC3BF741FE /* PlainOtpFieldViewController.swift */; };
 		27AA807C83CA4084E66AA9D4 /* CustomOtpFieldPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEEEB4D6AC97D711A6195A /* CustomOtpFieldPresenter.swift */; };
 		2D459EBDD8DD0A26C3EDA746 /* DefaultOtpFieldViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50A6EC8E2439317848F018 /* DefaultOtpFieldViewInput.swift */; };
+		2F561E3FC523251AEC26E157 /* PlainOtpFieldModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014A51D083D3AB6AD3BF75D /* PlainOtpFieldModuleInput.swift */; };
 		35D4C539CD12B28C9A1FC7E8 /* CustomOtpFieldModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663406EB5B5D8317D4ABD9E9 /* CustomOtpFieldModuleConfigurator.swift */; };
+		38C51C20BD69A49CAE73FC0C /* PlainOtpFieldModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F4D64632E6041C75A5BBFE /* PlainOtpFieldModuleOutput.swift */; };
 		3A6087EA2DA78E246EA1FF3F /* DefaultOtpFieldModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991AB6889B70466D5CCFA447 /* DefaultOtpFieldModuleConfigurator.swift */; };
 		3BB5B81EA6EB621E1A2860C3 /* DefaultOtpFieldModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013050DC37F4A9A747D0CB92 /* DefaultOtpFieldModuleInput.swift */; };
 		3CF50EEB7FB8EDF784F4DCA4 /* MainModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20CA3DCDF11B6580BDFDD3 /* MainModuleConfigurator.swift */; };
 		40F0977EBC72C8BB52B69963 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E711291C3F0B6B2B5128571 /* MainModuleOutput.swift */; };
 		43B2697ACDDF66A9A92D78EF /* RoundOtpFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADF29673AE68CF2B7014090 /* RoundOtpFieldViewController.xib */; };
 		46502BFD64D31DCD91B09FE1 /* CustomOtpFieldModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B207DF58327A76B14E9B1 /* CustomOtpFieldModuleInput.swift */; };
+		4FCDC7A6BDE3DBACB445E682 /* PlainOtpFieldViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6D7EE9AC2B657A504C76C7 /* PlainOtpFieldViewInput.swift */; };
+		5349567F9BE25FAE9B4B8D78 /* PlainOtpFieldPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03B7B834BDE8E71B3689038 /* PlainOtpFieldPresenter.swift */; };
 		57A3C5042424C24200AB0219 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5032424C24200AB0219 /* LaunchScreen.xib */; };
 		57A3C5062424C24200AB0219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5052424C24200AB0219 /* Assets.xcassets */; };
 		57A3C5082424C24200AB0219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5072424C24200AB0219 /* AppDelegate.swift */; };
@@ -48,8 +53,12 @@
 		72482672A5B450642912F030 /* DefaultOtpFieldModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A00833A6B8BFBC14278A5 /* DefaultOtpFieldModuleOutput.swift */; };
 		81B101CD5EF4CB190873C808 /* CustomOtpFieldViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8252E87584CA68DEF611B5D /* CustomOtpFieldViewOutput.swift */; };
 		833C6A87AB0AB446DB2EB3C5 /* CustomOtpFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29781F0D482F543CA9AD8289 /* CustomOtpFieldViewController.swift */; };
+		88C0B157A790F0C3F0BCE49C /* PlainOtpFieldModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F62B5AC4FAC54D30BB90BFC /* PlainOtpFieldModuleConfigurator.swift */; };
 		8F3EEC6313FFB239DF818EBF /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ADB3A4C81BA429FD7787D /* MainPresenter.swift */; };
 		8FEBC87D02C3174AB77DDB2F /* DefaultOtpFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05466F945EB81009602C58 /* DefaultOtpFieldViewController.swift */; };
+		90C77D0C24CC7EC400992FB1 /* PlainOTPFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C77D0B24CC7EC400992FB1 /* PlainOTPFieldAdapter.swift */; };
+		90C77D0F24CC7ED800992FB1 /* PlainPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C77D0E24CC7ED800992FB1 /* PlainPinView.swift */; };
+		90C77D1124CC7EE000992FB1 /* PlainPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C77D1024CC7EE000992FB1 /* PlainPinView.xib */; };
 		91146BECA3B9CFBF175DE150 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249167611841325E6EC8C2C /* MainViewInput.swift */; };
 		976B5C0B1566BB6782850930 /* DefaultOtpFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 061EA15C38C9EDA1CE279C86 /* DefaultOtpFieldViewController.xib */; };
 		9C648A4F8548454B9FE4CAB5 /* RoundOtpFieldPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1DBA564130BD0BFF71D428 /* RoundOtpFieldPresenter.swift */; };
@@ -61,6 +70,8 @@
 		CBC6D9B25EDE3819AC5BD595 /* CustomOtpFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50858B0356027E863913E0C8 /* CustomOtpFieldViewController.xib */; };
 		D1D05B03DF366920C8F0FBA0 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CBF6C8958F8703053E6A0 /* MainModuleInput.swift */; };
 		D5A03890F6B9FAD936A09DC1 /* RoundOtpFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8DC00DF40FAEBD9C3E954 /* RoundOtpFieldViewController.swift */; };
+		D780ACF2B316CB7B4AF93098 /* PlainOtpFieldViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A108388384E1580AD9301 /* PlainOtpFieldViewOutput.swift */; };
+		D9D8F8600FDEC30E5F3C75CC /* PlainOtpFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04E33050E65433348DD7B2B /* PlainOtpFieldViewController.xib */; };
 		E445DA4B607394CFB2E1B2C8 /* DefaultOtpFieldViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7ACAE5BA796C9B2AAEF07 /* DefaultOtpFieldViewOutput.swift */; };
 		E4D2CCCFB823793CDD940791 /* RoundOtpFieldModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8116BFCB5EA3BE34D2F55FA /* RoundOtpFieldModuleConfigurator.swift */; };
 		E691FF674C33DF091FAB19E1 /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B136FE44FD52426999952 /* MainViewOutput.swift */; };
@@ -73,6 +84,7 @@
 		0BC83CFFADF8632C5AC45AE4 /* RoundOtpFieldViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundOtpFieldViewOutput.swift; sourceTree = "<group>"; };
 		0D4C4C5327893CCA644C90B7 /* Pods-OTPTextFieldExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPTextFieldExample.debug.xcconfig"; path = "Target Support Files/Pods-OTPTextFieldExample/Pods-OTPTextFieldExample.debug.xcconfig"; sourceTree = "<group>"; };
 		0E711291C3F0B6B2B5128571 /* MainModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleOutput.swift; sourceTree = "<group>"; };
+		1014A51D083D3AB6AD3BF75D /* PlainOtpFieldModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldModuleInput.swift; sourceTree = "<group>"; };
 		1235D35CF71609F099221E45 /* MainCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1346AF16632293DF38468624 /* CustomOtpFieldViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomOtpFieldViewInput.swift; sourceTree = "<group>"; };
 		1902184A5B42D3BE892DAB51 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -117,12 +129,18 @@
 		57A3C5462425281900AB0219 /* CustomFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldAdapter.swift; sourceTree = "<group>"; };
 		614ADB3A4C81BA429FD7787D /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		63A8DC00DF40FAEBD9C3E954 /* RoundOtpFieldViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundOtpFieldViewController.swift; sourceTree = "<group>"; };
+		65F4D64632E6041C75A5BBFE /* PlainOtpFieldModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldModuleOutput.swift; sourceTree = "<group>"; };
 		663406EB5B5D8317D4ABD9E9 /* CustomOtpFieldModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomOtpFieldModuleConfigurator.swift; sourceTree = "<group>"; };
 		68F0DBF8FF2865F3224162A3 /* RoundOtpFieldModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundOtpFieldModuleInput.swift; sourceTree = "<group>"; };
+		6F62B5AC4FAC54D30BB90BFC /* PlainOtpFieldModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldModuleConfigurator.swift; sourceTree = "<group>"; };
 		72D67F0A790D343C4BD742CD /* CustomOtpFieldModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomOtpFieldModuleOutput.swift; sourceTree = "<group>"; };
+		7C4A108388384E1580AD9301 /* PlainOtpFieldViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldViewOutput.swift; sourceTree = "<group>"; };
 		7D1DBA564130BD0BFF71D428 /* RoundOtpFieldPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundOtpFieldPresenter.swift; sourceTree = "<group>"; };
 		808CBF6C8958F8703053E6A0 /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		887A00833A6B8BFBC14278A5 /* DefaultOtpFieldModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultOtpFieldModuleOutput.swift; sourceTree = "<group>"; };
+		90C77D0B24CC7EC400992FB1 /* PlainOTPFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainOTPFieldAdapter.swift; sourceTree = "<group>"; };
+		90C77D0E24CC7ED800992FB1 /* PlainPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainPinView.swift; sourceTree = "<group>"; };
+		90C77D1024CC7EE000992FB1 /* PlainPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlainPinView.xib; sourceTree = "<group>"; };
 		93965E3F6DEB41B4575D462B /* DefaultOtpFieldPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultOtpFieldPresenter.swift; sourceTree = "<group>"; };
 		971FAE21CFA4F4CF77C84DD3 /* Pods-OTPTextFieldExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPTextFieldExample.release.xcconfig"; path = "Target Support Files/Pods-OTPTextFieldExample/Pods-OTPTextFieldExample.release.xcconfig"; sourceTree = "<group>"; };
 		991AB6889B70466D5CCFA447 /* DefaultOtpFieldModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultOtpFieldModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -130,8 +148,12 @@
 		AB20CA3DCDF11B6580BDFDD3 /* MainModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleConfigurator.swift; sourceTree = "<group>"; };
 		AF50A6EC8E2439317848F018 /* DefaultOtpFieldViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultOtpFieldViewInput.swift; sourceTree = "<group>"; };
 		B07B136FE44FD52426999952 /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
+		B0C2FA792A43B4CC3BF741FE /* PlainOtpFieldViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldViewController.swift; sourceTree = "<group>"; };
 		B42B207DF58327A76B14E9B1 /* CustomOtpFieldModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomOtpFieldModuleInput.swift; sourceTree = "<group>"; };
 		B8252E87584CA68DEF611B5D /* CustomOtpFieldViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomOtpFieldViewOutput.swift; sourceTree = "<group>"; };
+		C03B7B834BDE8E71B3689038 /* PlainOtpFieldPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldPresenter.swift; sourceTree = "<group>"; };
+		C04E33050E65433348DD7B2B /* PlainOtpFieldViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PlainOtpFieldViewController.xib; sourceTree = "<group>"; };
+		CB6D7EE9AC2B657A504C76C7 /* PlainOtpFieldViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlainOtpFieldViewInput.swift; sourceTree = "<group>"; };
 		D0491F7553925E0D85199469 /* MainCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinatorOutput.swift; sourceTree = "<group>"; };
 		E8116BFCB5EA3BE34D2F55FA /* RoundOtpFieldModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundOtpFieldModuleConfigurator.swift; sourceTree = "<group>"; };
 		F249167611841325E6EC8C2C /* MainViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
@@ -218,6 +240,16 @@
 				B8252E87584CA68DEF611B5D /* CustomOtpFieldViewOutput.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		484EC55D7AE20A51E9EAD852 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C03B7B834BDE8E71B3689038 /* PlainOtpFieldPresenter.swift */,
+				1014A51D083D3AB6AD3BF75D /* PlainOtpFieldModuleInput.swift */,
+				65F4D64632E6041C75A5BBFE /* PlainOtpFieldModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		5336BD0683B487E497BA0751 /* Configurator */ = {
@@ -460,6 +492,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		744F2026C338B3A5C338C697 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6F62B5AC4FAC54D30BB90BFC /* PlainOtpFieldModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		8D3FA10E9A10213A97F24872 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +508,24 @@
 				0E711291C3F0B6B2B5128571 /* MainModuleOutput.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		90C77D0A24CC7EAE00992FB1 /* PlainOTPField */ = {
+			isa = PBXGroup;
+			children = (
+				90C77D0D24CC7ECA00992FB1 /* PlainPinView */,
+				90C77D0B24CC7EC400992FB1 /* PlainOTPFieldAdapter.swift */,
+			);
+			path = PlainOTPField;
+			sourceTree = "<group>";
+		};
+		90C77D0D24CC7ECA00992FB1 /* PlainPinView */ = {
+			isa = PBXGroup;
+			children = (
+				90C77D0E24CC7ED800992FB1 /* PlainPinView.swift */,
+				90C77D1024CC7EE000992FB1 /* PlainPinView.xib */,
+			);
+			path = PlainPinView;
 			sourceTree = "<group>";
 		};
 		A96C53A3E9593A37A5F28639 /* Main */ = {
@@ -489,8 +547,19 @@
 				BE3E3B97887C20FDD0908D30 /* DefaultOtpField */,
 				E1D0933759E6C245FF2FA945 /* RoundOtpField */,
 				069FFC1332D5C30B4F58AFA7 /* CustomOtpField */,
+				BA2911B402CB2285BAF4CD73 /* PlainOtpField */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		BA2911B402CB2285BAF4CD73 /* PlainOtpField */ = {
+			isa = PBXGroup;
+			children = (
+				744F2026C338B3A5C338C697 /* Configurator */,
+				484EC55D7AE20A51E9EAD852 /* Presenter */,
+				F9285F88C1F480E6E284B586 /* View */,
+			);
+			path = PlainOtpField;
 			sourceTree = "<group>";
 		};
 		BE3E3B97887C20FDD0908D30 /* DefaultOtpField */ = {
@@ -548,6 +617,18 @@
 				AADF29673AE68CF2B7014090 /* RoundOtpFieldViewController.xib */,
 				2F7E12AB4F34BD070E8CEA49 /* RoundOtpFieldViewInput.swift */,
 				0BC83CFFADF8632C5AC45AE4 /* RoundOtpFieldViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9285F88C1F480E6E284B586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90C77D0A24CC7EAE00992FB1 /* PlainOTPField */,
+				B0C2FA792A43B4CC3BF741FE /* PlainOtpFieldViewController.swift */,
+				C04E33050E65433348DD7B2B /* PlainOtpFieldViewController.xib */,
+				CB6D7EE9AC2B657A504C76C7 /* PlainOtpFieldViewInput.swift */,
+				7C4A108388384E1580AD9301 /* PlainOtpFieldViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -623,6 +704,8 @@
 				976B5C0B1566BB6782850930 /* DefaultOtpFieldViewController.xib in Resources */,
 				43B2697ACDDF66A9A92D78EF /* RoundOtpFieldViewController.xib in Resources */,
 				CBC6D9B25EDE3819AC5BD595 /* CustomOtpFieldViewController.xib in Resources */,
+				D9D8F8600FDEC30E5F3C75CC /* PlainOtpFieldViewController.xib in Resources */,
+				90C77D1124CC7EE000992FB1 /* PlainPinView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A3C5232424C24200AB0219 /* Coordinator.swift in Sources */,
+				90C77D0C24CC7EC400992FB1 /* PlainOTPFieldAdapter.swift in Sources */,
 				57A3C50E2424C24200AB0219 /* Assets.swift in Sources */,
 				57A3C5272424C24200AB0219 /* Router.swift in Sources */,
 				57A3C53A2424DA4E00AB0219 /* DefaultNavigationController.swift in Sources */,
@@ -750,6 +834,7 @@
 				66523596D246DA6649612683 /* RoundOtpFieldModuleInput.swift in Sources */,
 				F3084921EFEA474E604D1F45 /* RoundOtpFieldModuleOutput.swift in Sources */,
 				D5A03890F6B9FAD936A09DC1 /* RoundOtpFieldViewController.swift in Sources */,
+				90C77D0F24CC7ED800992FB1 /* PlainPinView.swift in Sources */,
 				CAC3D298694BD31552046405 /* RoundOtpFieldViewInput.swift in Sources */,
 				C21262617191C7E963148455 /* RoundOtpFieldViewOutput.swift in Sources */,
 				35D4C539CD12B28C9A1FC7E8 /* CustomOtpFieldModuleConfigurator.swift in Sources */,
@@ -759,6 +844,13 @@
 				833C6A87AB0AB446DB2EB3C5 /* CustomOtpFieldViewController.swift in Sources */,
 				A6EFB03D812116945EAB749B /* CustomOtpFieldViewInput.swift in Sources */,
 				81B101CD5EF4CB190873C808 /* CustomOtpFieldViewOutput.swift in Sources */,
+				88C0B157A790F0C3F0BCE49C /* PlainOtpFieldModuleConfigurator.swift in Sources */,
+				5349567F9BE25FAE9B4B8D78 /* PlainOtpFieldPresenter.swift in Sources */,
+				2F561E3FC523251AEC26E157 /* PlainOtpFieldModuleInput.swift in Sources */,
+				38C51C20BD69A49CAE73FC0C /* PlainOtpFieldModuleOutput.swift in Sources */,
+				18310A80F4B9D67A5E1084D0 /* PlainOtpFieldViewController.swift in Sources */,
+				4FCDC7A6BDE3DBACB445E682 /* PlainOtpFieldViewInput.swift in Sources */,
+				D780ACF2B316CB7B4AF93098 /* PlainOtpFieldViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import OTPTextField
+import SFOTPTextField
 
 final class RoundOtpFieldViewController: UIViewController {
 

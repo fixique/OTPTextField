@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import OTPTextField
+import SFOTPTextField
 
 final class CustomPinView: UIView {
 
@@ -33,24 +33,17 @@ extension CustomPinView: PinContainer {
         codeLabel.text = value
     }
 
-    func setError() {
-        indicatorView.backgroundColor = Colors.Figma.defaultRed
-    }
-
-    func removeError() {
-        indicatorView.backgroundColor = Colors.Figma.negativeBackground
-    }
-
     func clear() {
         codeLabel.text = nil
     }
 
-    func animateIndicator() {
-        indicatorView.backgroundColor = Colors.Figma.defaultBlue
-    }
-
-    func removeIndicator() {
-        indicatorView.backgroundColor = Colors.Figma.negativeBackground
+    func setupState(isActive: Bool, isError: Bool) {
+        if isError {
+            indicatorView.backgroundColor = Colors.Figma.defaultRed
+        } else {
+            let color = isActive ? Colors.Figma.defaultBlue : Colors.Figma.negativeBackground
+            indicatorView.backgroundColor = color
+        }
     }
 
 }

@@ -1,85 +1,89 @@
 //
-//  DefaultPinView.swift
+//  PlainPinView.swift
 //  OTPTextFieldExample
 //
-//  Created by Vladislav Krupenko on 19.03.2020.
+//  Created by Александр Чаусов on 25/07/2020.
 //  Copyright © 2020 Fixique. All rights reserved.
 //
 
 import UIKit
+import SFOTPTextField
 
-public final class DefaultPinView: UIView {
+final class PlainPinView: UIView {
 
     // MARK: - IBOutlets
 
-    @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var codeLabel: UILabel!
+    @IBOutlet private weak var placeholderView: UIView!
     @IBOutlet private weak var indicatorView: UIView!
 
     // MARK: - UIView
 
-    override public func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         setupInitialState()
     }
 
 }
 
-// MARK: - Pin Container
+// MARK: - PinContainer
 
-extension DefaultPinView: PinContainer {
+extension PlainPinView: PinContainer {
 
-    public func set(value: String?) {
+    func set(value: String?) {
         codeLabel.text = value
+        placeholderView.isHidden = true
     }
 
-    public func clear() {
+    func clear() {
         codeLabel.text = nil
+        placeholderView.isHidden = false
     }
 
-    public func setupState(isActive: Bool, isError: Bool) {
+    func setupState(isActive: Bool, isError: Bool) {
         if isActive && indicatorView.isHidden {
             startIndicatorAnimation()
         } else if !isActive {
             stopIndicatorAnimation()
         }
+        let color = isError ? Colors.Figma.defaultRed : Colors.Figma.negativeBackground
+        placeholderView.backgroundColor = color
     }
 
 }
 
-// MARK: - Configuration
+// MARK: – Configuration
 
-private extension DefaultPinView {
+private extension PlainPinView {
 
     func setupInitialState() {
-        configureContainerView()
         configureCodeLabel()
         configureIndicatorView()
-    }
-
-    func configureContainerView() {
-        containerView.backgroundColor = UIColor(red: 246 / 255, green: 246 / 255, blue: 246 / 255, alpha: 1.0)
-        containerView.layer.cornerRadius = 2.0
-        containerView.layer.masksToBounds = true
+        configurePlaceholderView()
     }
 
     func configureCodeLabel() {
-        codeLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
-        codeLabel.textColor = UIColor.black
-        codeLabel.textAlignment = .center
         codeLabel.text = nil
+        codeLabel.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
+        codeLabel.textColor = Colors.Figma.defaultText
     }
 
     func configureIndicatorView() {
-        indicatorView.backgroundColor = UIColor(red: 212 / 255, green: 0, blue: 0, alpha: 1.0)
+        indicatorView.backgroundColor = Colors.Figma.defaultBlue
+        indicatorView.layer.cornerRadius = 1
         indicatorView.isHidden = true
+    }
+
+    func configurePlaceholderView() {
+        placeholderView.backgroundColor = Colors.Figma.negativeBackground
+        placeholderView.layer.cornerRadius = placeholderView.bounds.height / 2
     }
 
 }
 
 // MARK: - Animation
 
-private extension DefaultPinView {
+private extension PlainPinView {
 
     func startIndicatorAnimation() {
         let appearAnimation = CABasicAnimation(keyPath: "opacity")

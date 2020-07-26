@@ -9,7 +9,7 @@ def common_pods
   utils
   pod 'SurfUtils/XibView', :git => 'https://github.com/surfstudio/iOS-Utils.git', :tag => '10.0.5'
   pod 'ReactiveDataDisplayManager', :git => 'https://github.com/surfstudio/ReactiveDataDisplayManager', :commit => '73122a834e7e90744dd828804afb32dbd48a83c6'
-  pod 'OTPTextField', :path => '../'
+  pod 'SFOTPTextField', :path => '../'
 
 end
 

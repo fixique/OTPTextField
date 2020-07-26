@@ -8,10 +8,12 @@
 "OTPFieldType.Default.title" = "Default input field";
 "OTPFieldType.Round.title" = "Round input field";
 "OTPFieldType.Custom.title" = "Custom input field";
+"OTPFieldType.Plain.title" = "Plain input field";
 
 "OTPFieldType.Default.description" = "This is an example of a default input field. An error state has been added to it. Correct password is %@";
 "OTPFieldType.Round.description" = "This is an example of a default rounded input field. An error state has been added to it. Correct password is %@";
 "OTPFieldType.Custom.description" = "This is an example of a fully custom input field otp. An error state has been added to it. I create a custom pin view and adapter. Correct password is %@";
+"OTPFieldType.Plain.description" = "This is an example of a fully custom input field otp. Very similar to customOtpField. Has custom behavior, due to which the error is reset on its own after two seconds. Correct password is %@";
 
 // MARK: - Errors
 
