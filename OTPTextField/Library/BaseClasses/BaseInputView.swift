@@ -101,11 +101,11 @@ public class BaseInputView: UIView, UITextInput {
         return nil
     }
 
-    public func baseWritingDirection(for position: UITextPosition, in direction: UITextStorageDirection) -> UITextWritingDirection {
+    public func baseWritingDirection(for position: UITextPosition, in direction: UITextStorageDirection) -> NSWritingDirection {
         return .leftToRight
     }
 
-    public func setBaseWritingDirection(_ writingDirection: UITextWritingDirection, for range: UITextRange) {
+    public func setBaseWritingDirection(_ writingDirection: NSWritingDirection, for range: UITextRange) {
     }
 
     public func firstRect(for range: UITextRange) -> CGRect {
